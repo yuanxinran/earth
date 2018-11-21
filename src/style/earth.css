@@ -1,0 +1,69 @@
+.cls-1 {
+  fill: #fff2d5;
+}
+.cls-2 {
+  fill: #a0d0e1;
+}
+.cls-3 {
+  fill: #b4b4b4;
+}
+.cls-4 {
+  fill: #7c8082;
+}
+.cls-5 {
+  fill: #677c75;
+}
+.cls-6 {
+  fill: #fff;
+}
+.cls-7 {
+  fill: #cacccb;
+}
+.cls-8 {
+  fill: #745f5f;
+}
+.cls-9 {
+  fill: #908c6c;
+}
+.cls-10,
+.cls-12,
+.cls-14 {
+  font-size: 10px;
+  font-family: Silom;
+}
+.cls-10 {
+  fill: #33669a;
+}
+.cls-11 {
+  fill: #81bae5;
+}
+.cls-12 {
+  fill: #00b45b;
+}
+.cls-13 {
+  fill: #a1786a;
+}
+.cls-15 {
+  fill: #5a5a5a;
+}
+.cls-16 {
+  fill: transparent;
+}
+
+.cls-16:hover {
+  cursor: pointer;
+}
+
+#Layer_1-2 {
+  border: 6px solid black;
+  background-color: black;
+}
+
+#Layer_1 {
+  /* background-color: red; */
+}
+
+/* -webkit-transform-origin: 50% 50%;
+-moz-transform-origin: 50% 50%;
+-o-transform-origin: 50% 50%;
+transform-origin: 50% 50%; */

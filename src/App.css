@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  width: 95%;
+  margin: auto auto;
 }
 
 .App-logo {
@@ -29,4 +31,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#earth_area {
+  margin-top: 50px;
+}
+
+.water {
+  padding: 100px;
 }
