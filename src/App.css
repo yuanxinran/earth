@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   width: 95%;
-  margin: auto auto;
+  margin: 0 auto;
 }
 
 .App-logo {
@@ -33,10 +33,42 @@
   }
 }
 
-#earth_area {
-  margin-top: 50px;
+h3 {
+  font-family: Silom;
 }
 
-.water {
-  padding: 100px;
+.title-area {
+  width: 90%;
+  margin-left: 10%;
+  margin-top: 200px;
+  z-index: 2;
 }
+
+.intro {
+  margin-bottom: 400px;
+  width: 60%;
+  margin-left: 40%;
+}
+
+.intro h1 {
+  z-index: 3;
+  font-family: Silom;
+  font-size: 5em;
+}
+
+.section {
+  /* margin-top: 100px; */
+  margin-bottom: 100px;
+}
+
+/* #water-intro {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: auto;
+  opacity: 50%;
+  z-index: -2;
+} */

@@ -1,15 +1,15 @@
-import React, { Component } from "react";
-import "../style/earth.css";
-import reactCSS from "reactcss";
+import React, { Component } from 'react';
+import '../style/earth.css';
+import Plx from 'react-plx';
 
 const positions = [];
 class Earth extends Component {
   constructor(props) {
     super(props);
     this.positions = [
-      "translate(124.94 10)",
-      "translate(64.94 130.68)",
-      "translate(-15 10)"
+      'translate(124.94 10)',
+      'translate(64.94 130.68)',
+      'translate(-15 10)'
     ];
     this.order = { water: 0, tree: 1, waste: 2 };
     this.getPosition = this.getPosition.bind(this);
@@ -19,13 +19,13 @@ class Earth extends Component {
   state = {
     hoverItem: null,
     angle: 0,
-    rotate: "rotate(90, 79.94,53.68)"
+    rotate: 'rotate(90, 79.94,53.68)'
   };
 
   getPosition(name) {
-    if (name == "water") {
+    if (name == 'water') {
       return this.positions[this.order.water];
-    } else if (name == "waste") {
+    } else if (name == 'waste') {
       return this.positions[this.order.waste];
     } else {
       return this.positions[this.order.tree];
@@ -47,7 +47,7 @@ class Earth extends Component {
   }
 
   clickWater() {
-    console.log("click water");
+    console.log('click water');
   }
 
   render() {
@@ -57,7 +57,7 @@ class Earth extends Component {
         id="Layer_1"
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="-20 -20 180 180"
+        viewBox="-20 -40 185 150"
       >
         <defs />
         <title />
@@ -126,14 +126,14 @@ class Earth extends Component {
             </g>
             <g id="water">
               <path
-                className="cls-6"
-                d="M122.23,51.22c3.89,4.84-6.65,20.2-16.09,29.17-9,8.55-24.43,18.35-29.11,14.3S78.39,73.23,89.52,62.5,118.36,46.43,122.23,51.22Z"
-                transform="translate(-42.75 -44.51)"
+                transform="rotate(-125) translate(-45 15) scale(0.2)"
+                className="cls-7"
+                d="M23.3,63.3C23.3,78.1,35.3,90,50,90s26.7-11.9,26.7-26.7S50,10,50,10S23.3,48.6,23.3,63.3z M69.5,58.4  c0,1.8-1.5,3.3-3.3,3.3s-3.3-1.5-3.3-3.3c0-1.8,1.5-3.3,3.3-3.3S69.5,56.6,69.5,58.4z M50,79.6c0-1.6,1.1-2.9,2.6-3.2  c4.9-1,8.9-4.7,10.2-9.5c0.4-1.5,1.7-2.5,3.2-2.5l0,0c2.2,0,3.8,2.1,3.2,4.2c-2,7.2-7.9,12.8-15.3,14.3C51.9,83.4,50,81.8,50,79.6  L50,79.6z"
               />
               <path
-                className="cls-7"
-                d="M122.2,51.24c1.08.36.5,4.71.43,5.06-.55,4-2.59,7-5,10.38-.2.28-.83,1.17-2.54,3.3-2.07,2.6-4.94,6.17-9,10.43-4.28,4.49-6.43,6.75-8.95,8.41-3.39,2.22-2.81,1-9.56,4.64-2,1.08-4.17,2.34-7.16,2.28-.39,0-3.21-.09-3.43-1-.25-1.13,3.55-2.56,6.51-4.39,7.49-4.63,6.11-9.85,12.78-16.25s9.92-2.95,16.55-9.59C119,58.33,120.74,50.77,122.2,51.24Z"
-                transform="translate(-42.75 -44.51)"
+                transform="rotate(-125) translate(-65 20) scale(0.4)"
+                className="cls-6"
+                d="M23.3,63.3C23.3,78.1,35.3,90,50,90s26.7-11.9,26.7-26.7S50,10,50,10S23.3,48.6,23.3,63.3z M69.5,58.4  c0,1.8-1.5,3.3-3.3,3.3s-3.3-1.5-3.3-3.3c0-1.8,1.5-3.3,3.3-3.3S69.5,56.6,69.5,58.4z M50,79.6c0-1.6,1.1-2.9,2.6-3.2  c4.9-1,8.9-4.7,10.2-9.5c0.4-1.5,1.7-2.5,3.2-2.5l0,0c2.2,0,3.8,2.1,3.2,4.2c-2,7.2-7.9,12.8-15.3,14.3C51.9,83.4,50,81.8,50,79.6  L50,79.6z"
               />
             </g>
             <g id="tree">
@@ -309,7 +309,7 @@ class Earth extends Component {
               d="M123.06,97l23.2,41.28c11.09-4.9,15-10.41,16.43-14.61,1.08-3.11,1.36-6.88,4.76-10.1,2.64-2.51,4.53-2.15,7.11-4.74,2.9-2.93,3.64-6.53,4.18-9.14,1.28-6.25,1-16.69-4.93-20.2-2.17-1.29-2.65-.19-5.64-1.49-4.84-2.1-5.85-6.05-10.72-12.12a57,57,0,0,0-7.4-7.64Z"
               transform="translate(-42.75 -44.51)"
               onClick={this.clickTree}
-              onMouseEnter={() => this.handleHover("tree")}
+              onMouseEnter={() => this.handleHover('tree')}
               onMouseLeave={() => this.handleHover(null)}
             />
             <path
@@ -318,7 +318,7 @@ class Earth extends Component {
               d="M123.3,97.77l-49.1.28c.33,1.45,3.56,15.65,8.55,24.71,2.14,3.89,3.21,5.83,5.17,7.74,2.34,2.29,4,2.84,4.77,5,.94,2.65-.61,4.42-1,7.08-.9,6.4,5.36,15.45,12.8,16.26,6.78.75,12.34-5.57,12.79-6.1,3.39-4,2.52-6.84,5.71-8.63,3.44-2,6.17.47,11.58-.11,2.91-.31,7-1.52,11.67-5.72Z"
               transform="translate(-42.75 -44.51)"
               onClick={this.clickWaste}
-              onMouseEnter={() => this.handleHover("waste")}
+              onMouseEnter={() => this.handleHover('waste')}
               onMouseLeave={() => this.handleHover(null)}
             />
             <path
@@ -327,7 +327,7 @@ class Earth extends Component {
               d="M122,97.4l28.1-39.15C148.27,57,128.83,44,106.87,52.17c-18,6.74-30.18,25-30.05,45.58Z"
               transform="translate(-42.75 -44.51)"
               onClick={this.clickWater}
-              onMouseEnter={() => this.handleHover("water")}
+              onMouseEnter={() => this.handleHover('water')}
               onMouseLeave={() => this.handleHover(null)}
             />
             <animateTransform
@@ -346,8 +346,8 @@ class Earth extends Component {
           <text
             id="water_t"
             className="cls-10"
-            transform={this.getPosition("water")}
-            style={{ display: this.state.hoverItem == "water" ? "" : "none" }}
+            transform={this.getPosition('water')}
+            style={{ display: this.state.hoverItem == 'water' ? '' : 'none' }}
           >
             S
             <tspan className="cls-11" x="5.83" y="0">
@@ -363,8 +363,8 @@ class Earth extends Component {
           <text
             id="tree_t"
             className="cls-12"
-            transform={this.getPosition("tree")}
-            style={{ display: this.state.hoverItem == "tree" ? "" : "none" }}
+            transform={this.getPosition('tree')}
+            style={{ display: this.state.hoverItem == 'tree' ? '' : 'none' }}
           >
             S
             <tspan className="cls-13" x="5.83" y="0">
@@ -380,8 +380,8 @@ class Earth extends Component {
           <text
             id="waste_t"
             className="cls-14"
-            transform={this.getPosition("waste")}
-            style={{ display: this.state.hoverItem == "waste" ? "" : "none" }}
+            transform={this.getPosition('waste')}
+            style={{ display: this.state.hoverItem == 'waste' ? '' : 'none' }}
           >
             R
             <tspan className="cls-15" x="6.67" y="0">
@@ -400,4 +400,54 @@ class Earth extends Component {
   }
 }
 
-export default Earth;
+const exampleParallaxData = [
+  {
+    start: 0,
+    end: '#water-intro',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 45,
+        property: 'rotate'
+      },
+      {
+        startValue: 1,
+        endValue: 1,
+        property: 'scale'
+      },
+      {
+        startValue: '#ffcccc',
+        endValue: '#e6f7ff',
+        property: 'backgroundColor'
+      },
+      {
+        startValue: 0,
+        endValue: 200,
+        property: 'translateY'
+      }
+    ]
+  }
+];
+
+const styles = {
+  width: 100,
+  height: 100,
+  top: 100,
+  left: '10%',
+  position: 'fixed',
+  backgroundColor: '#ffcccc',
+  zIndex: '-1'
+};
+
+class EarthContainer extends Component {
+  render() {
+    return (
+      <div style={{ height: 20 }}>
+        <Plx parallaxData={exampleParallaxData} style={styles}>
+          <Earth />
+        </Plx>
+      </div>
+    );
+  }
+}
+export default EarthContainer;
