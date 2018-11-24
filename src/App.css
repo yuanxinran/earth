@@ -2,6 +2,7 @@
   text-align: center;
   width: 95%;
   margin: 0 auto;
+  font-family: Silom;
 }
 
 .App-logo {
@@ -31,10 +32,6 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-h3 {
-  font-family: Silom;
 }
 
 .title-area {

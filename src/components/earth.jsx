@@ -426,14 +426,19 @@ const exampleParallaxData = [
         property: 'translateY'
       }
     ]
+  },
+  {
+    start: '#water-intro',
+    duration: '300',
+    properties: [{ startValue: 200, endValue: 0, property: 'translateY' }]
   }
 ];
 
 const styles = {
   width: 100,
   height: 100,
-  top: 100,
-  left: '10%',
+  top: '3%',
+  left: '3%',
   position: 'fixed',
   backgroundColor: '#ffcccc',
   zIndex: '-1'
