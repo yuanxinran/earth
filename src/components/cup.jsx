@@ -11,7 +11,6 @@ class Cup extends Component {
 
   handleClick() {
     this.setState({ fill: true });
-    console.log('click');
   }
   render() {
     return (
@@ -55,7 +54,7 @@ class Cup extends Component {
             />
 
             <text
-              text-anchor="middle"
+              textAnchor="middle"
               transform="translate(136 137.88)"
               className={this.state.fill ? 'text-animate text' : 'text'}
               opacity="0"

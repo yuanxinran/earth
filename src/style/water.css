@@ -332,3 +332,29 @@
     opacity: 1;
   }
 }
+
+#change .title {
+  margin-bottom: 3em;
+}
+
+#change .cls-1 {
+  fill: #9dd5e8;
+}
+#change .cls-2 {
+  fill: #d6e5e3;
+}
+#change .cls-3 {
+  stroke: #9dc8cf;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+  fill: transparent;
+}
+#change .cls-4 {
+  fill: transparent;
+}
+
+#change .active-step {
+  stroke: #7087ce;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+}

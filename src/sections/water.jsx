@@ -4,6 +4,7 @@ import drop from '../imgs/drops.svg';
 import tap from '../imgs/tap.png';
 import Plx from 'react-plx';
 import Cup from '../components/cup.jsx';
+import Steps from '../components/steps.jsx';
 import '../style/water.css';
 
 const factData = [
@@ -116,15 +117,15 @@ class Arrow extends Component {
         viewBox="0 0 610 607"
         x="0px"
         y="0px"
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         transform="rotate(90)"
         style={{ fill: `${this.props.color}` }}
       >
         <defs />
         <g>
           <polygon
-            class="fil0"
+            className="fil0"
             points="0,0 297,303 0,607 310,607 610,303 310,0 "
           />
         </g>
@@ -157,7 +158,7 @@ class Usage extends Component {
     return (
       <div className="usage-part">
         <img src={this.props.img} />
-        <div cassName="name">{this.props.name}</div>
+        <div className="name">{this.props.name}</div>
         <Plx parallaxData={percentagePara} className="percent">
           {this.props.percent}
         </Plx>
@@ -296,7 +297,10 @@ class Water extends Component {
         </div>
 
         <div id="change">
-          <h2>Small steps can make a change..</h2>
+          <div className="title">
+            <h2>Small steps can make a change..</h2>
+          </div>
+          <Steps />
         </div>
 
         <div className="col-sm-12 water">
