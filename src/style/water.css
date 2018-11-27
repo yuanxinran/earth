@@ -60,6 +60,11 @@
   margin-bottom: 200px;
 }
 
+#change2 {
+  width: 90%;
+  margin: auto auto;
+}
+
 #usage h2 {
   margin-bottom: 2.5em;
   color: grey;
@@ -193,56 +198,56 @@
 }
 
 #bottle .cup-animate {
-  animation: bottle 1.5s;
+  animation: bottle 1s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   -webkit-animation-iteration-count: 1;
-  -webkit-animation: bottle 1.5s;
+  -webkit-animation: bottle 1s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
 }
 
 #power .cup-animate {
-  animation: power 1.5s;
+  animation: power 1s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   -webkit-animation-iteration-count: 1;
-  -webkit-animation: power 1.5s;
+  -webkit-animation: power 1s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
 }
 
 #paper .cup-animate {
-  animation: paper 1.5s;
+  animation: paper 1s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   -webkit-animation-iteration-count: 1;
-  -webkit-animation: paper 1.5s;
+  -webkit-animation: paper 1s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
 }
 
 #burger .cup-animate {
-  animation: burger 1.5s;
+  animation: burger 1s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   -webkit-animation-iteration-count: 1;
-  -webkit-animation: burger 1.5s;
+  -webkit-animation: burger 1s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
 }
 
 .text-animate {
-  animation: text 1.5s;
+  animation: text 1s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   -webkit-animation-iteration-count: 1;
-  -webkit-animation: text 1.5s;
+  -webkit-animation: text 1s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
 }
@@ -334,7 +339,12 @@
 }
 
 #change .title {
-  margin-bottom: 3em;
+  margin-bottom: 50px;
+}
+#change .title .badge {
+  font-size: 2em;
+  background-color: #ecf6f5;
+  color: black;
 }
 
 #change .cls-1 {
@@ -357,4 +367,31 @@
   stroke: #7087ce;
   stroke-miterlimit: 10;
   stroke-width: 3px;
+}
+
+#change .wrong,
+#change .right {
+  font-size: 1em;
+  text-align: left;
+  color: #4d4d4d;
+}
+
+#change .wrong::before {
+  content: ' ';
+  background-image: url('../imgs/usage2/wrong.png');
+  background-size: 1em 1em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+}
+
+#change .right::before {
+  content: ' ';
+  background-image: url('../imgs/usage2/right.png');
+  background-size: 1em 1em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
 }

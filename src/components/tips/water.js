@@ -2,50 +2,68 @@ const items = [
   {
     _id: 1,
     name: 'Showers',
-    content: 'Cut down 5 mins for shower time',
+    img: require('../../imgs/usage2/shower.png'),
+    wrong: '10-min shower',
+    right: '5-min shower',
     save: '45 litres',
     x: 0,
-    y: 100.06
+    y: 0,
+    offset: '20px'
   },
   {
     _id: 2,
-    name: 'Brushing your teeth',
-    content: 'Cut down 5 mins for shower time',
+    name: 'Brushing teeth',
+    img: require('../../imgs/usage2/brush.png'),
+    wrong: 'Tap running for 2 mins',
+    right: 'Use a mug',
     save: '11.5 litres',
-    x: 92,
-    y: 97.06
+    x: '14%',
+    y: 0,
+    offset: '20px'
   },
   {
     _id: 3,
     name: 'Flushing toilet',
-    content: 'Cut down 5 mins for shower time',
+    img: require('../../imgs/usage2/toilet.png'),
+    wrong: '4 full flushes/day',
+    right: '2 full flushes, 2 half flushes',
     save: '3 litres',
-    x: 205,
-    y: 115.06
+    x: '28%',
+    y: '20px',
+    offset: 0
   },
   {
     _id: 4,
     name: 'Dish washing',
-    content: 'Cut down 5 mins for shower time',
+    img: require('../../imgs/usage2/wash.png'),
+    wrong: 'Washing dishes under running tap',
+    right: 'Filled sink/container',
     save: '28 litres',
-    x: 340,
-    y: 95.06
+    x: '42%',
+    y: 0,
+    offset: '20px'
   },
   {
     _id: 5,
     name: 'Washing machine',
-    content: 'Cut down 5 mins for shower time',
+    img: require('../../imgs/usage2/washing2.png'),
+    wrong: 'Washing on a half load',
+    right: 'Washing on a full load',
     save: '52.5 litres',
-    x: 440,
-    y: 115.06
+    x: '56%',
+    y: '20px',
+    offset: 0
   },
   {
     _id: 6,
-    name: 'Recyling paper',
-    content: 'Recyle paper cups, cardboards, etc.',
+    name: 'Leaking pipes',
+    img: require('../../imgs/usage2/leak.png'),
+    wrong: 'Leaking pipes',
+    right: 'Repair leaks promptly',
     save: '45 litres',
-    x: 520,
-    y: 100.06
+    x: '70%',
+    y: '0',
+    offset: '20px'
   }
 ];
 

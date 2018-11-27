@@ -5,6 +5,8 @@ import tap from '../imgs/tap.png';
 import Plx from 'react-plx';
 import Cup from '../components/cup.jsx';
 import Steps from '../components/steps.jsx';
+import ReactHover from 'react-hover';
+import MoreTips from '../components/tips/more.jsx';
 import '../style/water.css';
 
 const factData = [
@@ -21,6 +23,12 @@ const factData = [
     easing: 'easeInOut'
   }
 ];
+
+const optionsCursorTrueWithMargin = {
+  followCursor: true,
+  shiftX: 20,
+  shiftY: 0
+};
 
 class WaterCarousel extends Component {
   state = {};
@@ -298,18 +306,52 @@ class Water extends Component {
 
         <div id="change">
           <div className="title">
-            <h2>Small steps can make a change..</h2>
+            <div
+              className="badge badge-secondary"
+              style={{ marginBottom: '20px' }}
+            >
+              Small steps can make a change..
+            </div>
+            <div style={{ color: 'grey' }}>
+              How to save up to 140 litres / day
+            </div>
           </div>
-          <Steps />
+          <Plx parallaxData={percentagePara}>
+            <Steps />
+          </Plx>
         </div>
 
-        <div className="col-sm-12 water">
+        <div id="change2">
+          <div className="title">
+            <h2>And there are many many other things you can do...</h2>
+          </div>
+          <MoreTips />
+          <ReactHover options={optionsCursorTrueWithMargin}>
+            <ReactHover.Trigger type="trigger">
+              <div>Wo shi xiao maomao</div>
+            </ReactHover.Trigger>
+            <ReactHover.Hover type="hover">
+              <div class="card">
+                <div class="card-body">
+                  This is some text within a card body.
+                </div>
+              </div>
+            </ReactHover.Hover>
+          </ReactHover>
+          <div className="row">
+            <div className="col-sm-4" />
+            <div className="col-sm-4">haha</div>
+            <div className="col-sm-4">haha</div>
+          </div>
+        </div>
+
+        {/* <div className="col-sm-12 water">
           <div className="square">
             <AnimatedSquare />
             <AnimatedSquare />
             <AnimatedSquare id="water-end" />
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }

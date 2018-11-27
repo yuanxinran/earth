@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import { Flipper, Flipped } from "react-flip-toolkit";
-import "../style/square.css";
+import React, { Component } from 'react';
+import { Flipper, Flipped } from 'react-flip-toolkit';
+import '../style/square.css';
 
-const colors = ["#ff4f66", "#7971ea", "#5900d8"];
+const colors = ['#ff4f66', '#7971ea', '#5900d8'];
 
 class AnimatedSquare extends Component {
   state = { focused: undefined };
@@ -10,7 +10,7 @@ class AnimatedSquare extends Component {
     return (
       <Flipper flipKey={this.state.focused} duration={750}>
         <main>
-          {typeof this.state.focused === "string" ? (
+          {typeof this.state.focused === 'string' ? (
             <React.Fragment>
               {colors.map(color =>
                 color == this.state.focused ? (
