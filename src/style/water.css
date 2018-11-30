@@ -47,7 +47,7 @@
 #hidden-usage {
   width: 90%;
   margin: auto auto;
-  margin-bottom: 200px;
+  margin-bottom: 350px;
   padding: 80px 0;
   background-color: #edf3ff;
   display: block;
@@ -57,7 +57,7 @@
   display: block;
   width: 90%;
   margin: auto auto;
-  margin-bottom: 200px;
+  margin-bottom: 350px;
 }
 
 #change2 {
@@ -342,7 +342,7 @@
   margin-bottom: 50px;
 }
 #change .title .badge {
-  font-size: 2em;
+  font-size: 2.5em;
   background-color: #ecf6f5;
   color: black;
 }
@@ -395,3 +395,38 @@
   height: 1em;
   margin-right: 0.5em;
 }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #3f5577;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.image-container .text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* .gallery-container {
+  height: 500px;
+  overflow: scroll;
+  overflow-x: hidden;
+} */

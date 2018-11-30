@@ -1,0 +1,26 @@
+.tree {
+  margin-top: 200px;
+}
+
+.tree .intro {
+  margin-bottom: 150px;
+}
+
+.tree .data-list {
+  width: 30%;
+  display: inline-block;
+  background-color: red;
+}
+
+.tree .data {
+  position: relative;
+}
+
+.data .circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: black;
+  min-width: 100%;
+  min-height: 120px;
+}

@@ -403,17 +403,14 @@ class Earth extends Component {
 const exampleParallaxData = [
   {
     start: 0,
+    startOffset: 100,
     end: '#water-intro',
+    endOffset: 500,
     properties: [
       {
         startValue: 0,
         endValue: 45,
         property: 'rotate'
-      },
-      {
-        startValue: 1,
-        endValue: 1,
-        property: 'scale'
       },
       {
         startValue: '#ffcccc',
@@ -424,13 +421,36 @@ const exampleParallaxData = [
         startValue: 0,
         endValue: 200,
         property: 'translateY'
+      },
+      {
+        startValue: 1,
+        endValue: 5,
+        property: 'scale'
       }
     ]
   },
   {
     start: '#water-intro',
-    duration: '300',
-    properties: [{ startValue: 200, endValue: 0, property: 'translateY' }]
+    startOffset: '700',
+    end: '#usage',
+    endOffset: '500',
+    properties: [
+      {
+        startValue: 5,
+        endValue: 1,
+        property: 'scale'
+      },
+      {
+        startValue: 200,
+        endValue: 0,
+        property: 'translateY'
+      },
+      {
+        startValue: 1,
+        endValue: 0.5,
+        property: 'opacityFilter'
+      }
+    ]
   }
 ];
 

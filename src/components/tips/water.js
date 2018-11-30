@@ -67,10 +67,80 @@ const items = [
   }
 ];
 
+const tips = [
+  {
+    _id: 1,
+    name: 'Recyling',
+    description: 'The production of everything needs water',
+    img: require('../../imgs/watertips/recycling.jpg')
+  },
+  {
+    _id: 2,
+    name: 'Bring your own bottle',
+    description:
+      'It takes at least as much water to make the plastic bottle as the drinking water it holds. ',
+    img: require('../../imgs/watertips/bottle.jpg')
+  },
+  {
+    _id: 3,
+    name: 'Cut down your shower time',
+    description: 'Cut 5 mins from your shower time ',
+    img: require('../../imgs/watertips/shower.png')
+  },
+  {
+    _id: 4,
+    name: 'Carry reusable tableware',
+    description: 'Cut 5 mins from your shower time ',
+    img: require('../../imgs/watertips/tableware.jpg')
+  },
+  {
+    _id: 5,
+    name: 'Collect rain water',
+    description:
+      'Collect rain water through gutters. Use them to water your flowers.',
+    img: require('../../imgs/watertips/rain.jpg')
+  },
+  {
+    _id: 6,
+    name: 'Fill the sink',
+    description:
+      'Fill up your sink with water, instead of letting it run the whole time that you’re scrubbing.',
+    img: require('../../imgs/watertips/plates.jpg')
+  },
+  {
+    _id: 7,
+    name: 'Check your bill',
+    description:
+      'If your water bill spikes suddenly, there’s a good chance that a leak is the culprit.',
+    img: require('../../imgs/watertips/bill.jpg')
+  },
+  {
+    _id: 8,
+    name: 'Recycle water',
+    description: 'Reuse the water you used to wash vegetables.',
+    img: require('../../imgs/watertips/fruits.png')
+  },
+  {
+    _id: 8,
+    name: '...',
+    description: null,
+    img: require('../../imgs/watertips/blank.png'),
+    show: true
+  }
+];
+
 export function getItems() {
   return items;
 }
 
 export function getItem(n) {
   return items.find(m => m._id === parseInt(n));
+}
+
+export function getTips() {
+  return tips;
+}
+
+export function getTip(n) {
+  return tips.find(m => m._id === parseInt(n));
 }

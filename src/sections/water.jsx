@@ -305,7 +305,7 @@ class Water extends Component {
         </div>
 
         <div id="change">
-          <div className="title">
+          <Plx className="title" parallaxData={percentagePara}>
             <div
               className="badge badge-secondary"
               style={{ marginBottom: '20px' }}
@@ -315,7 +315,7 @@ class Water extends Component {
             <div style={{ color: 'grey' }}>
               How to save up to 140 litres / day
             </div>
-          </div>
+          </Plx>
           <Plx parallaxData={percentagePara}>
             <Steps />
           </Plx>
@@ -325,24 +325,7 @@ class Water extends Component {
           <div className="title">
             <h2>And there are many many other things you can do...</h2>
           </div>
-          <MoreTips />
-          <ReactHover options={optionsCursorTrueWithMargin}>
-            <ReactHover.Trigger type="trigger">
-              <div>Wo shi xiao maomao</div>
-            </ReactHover.Trigger>
-            <ReactHover.Hover type="hover">
-              <div class="card">
-                <div class="card-body">
-                  This is some text within a card body.
-                </div>
-              </div>
-            </ReactHover.Hover>
-          </ReactHover>
-          <div className="row">
-            <div className="col-sm-4" />
-            <div className="col-sm-4">haha</div>
-            <div className="col-sm-4">haha</div>
-          </div>
+          <MoreTips scroll={percentagePara} />
         </div>
 
         {/* <div className="col-sm-12 water">
