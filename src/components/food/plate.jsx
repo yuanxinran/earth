@@ -122,7 +122,9 @@ class PlateContainer extends Component {
         <div className="button" style={{ left: '5%' }} onClick={this.pre}>
           {'<'}
         </div>
-        <Plate />
+        <div className="background">
+          <Plate />
+        </div>
         {food.map(function(f, i) {
           return (
             <React.Fragment key={i}>

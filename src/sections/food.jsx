@@ -9,21 +9,40 @@ import PlateContainer from '../components/food/plate';
 import '../style/food.scss';
 import '../style/water.css';
 
+const category = [
+  {
+    color: '#D2F2FF',
+    name: 'Blue',
+    description:
+      'The amount of surface water and groundwater required (evaporated or used directly) to produce an item – for food this mainly refers to crop irrigation.'
+  },
+  {
+    color: '#DEDEDE',
+    name: 'Grey',
+    description:
+      'The amount of rainwater required (evaporated or used directly) to make an item – for food this refers to dry farming where crops receive only rainwater.'
+  },
+  {
+    color: '#D0E6BF',
+    name: 'Green',
+    description:
+      'The amount of freshwater required to dilute the wastewater generated in manufacturing, in order to maintain water quality , as determined by state and local standards – for food this refers to things like field and farm runoff.'
+  }
+];
+
 class Food extends Component {
   state = {};
   render() {
     return (
-      <div className="row water-content section">
-        <div className="food" style={{ width: '90%', margin: 'auto auto' }}>
-          <div className="plate">
-            <h2 className="title">Find about the water in your plate!</h2>
-            <PlateContainer />
-          </div>
+      <div className="food">
+        <div className="plate">
+          <h2 className="title">Find about the water in your plate!</h2>
+          <PlateContainer />
         </div>
 
         <div className="col-sm-12 tip-content">
           <div className="square">
-            <AnimatedSquare />
+            <AnimatedSquare items={category} />
           </div>
         </div>
 

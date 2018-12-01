@@ -1,51 +1,55 @@
 import React, { Component } from 'react';
 import { Flipper, Flipped } from 'react-flip-toolkit';
 import '../style/square.css';
+import { runInThisContext } from 'vm';
 
-const colors = ['#ff4f66', '#7971ea', '#5900d8'];
+const colors = ['#D2F2FF', '#DEDEDE', '#D0E6BF'];
 
 class AnimatedSquare extends Component {
+  constructor(props) {
+    super(props);
+  }
   state = { focused: undefined };
   render() {
     return (
       <Flipper flipKey={this.state.focused} duration={750}>
         <main>
-          {typeof this.state.focused === 'string' ? (
+          {typeof this.state.focused === 'object' ? (
             <React.Fragment>
-              {colors.map(color =>
-                color == this.state.focused ? (
-                  <Flipped flipId={this.state.focused}>
+              {this.props.items.map(item =>
+                item == this.state.focused ? (
+                  <Flipped flipId={this.state.focused.color}>
                     <div
                       className="focusedItem item"
-                      style={{ backgroundColor: this.state.focused }}
-                      onClick={() => this.setState({ focused: null })}
+                      style={{ backgroundColor: this.state.focused.color }}
+                      onClick={() => this.setState({ focused: undefined })}
                     >
                       <Flipped
-                        inverseFlipId={this.state.focused}
+                        inverseFlipId={this.state.focused.color}
                         transformOrigin="0 0"
                       >
                         <div>
                           <Flipped
-                            flipId={`${this.state.focused}-text`}
+                            flipId={`${this.state.focused.color}-text`}
                             translate
                           >
-                            <span>{this.state.focused}</span>
+                            <span>{this.state.focused.name}</span>
                           </Flipped>
                         </div>
                       </Flipped>
                     </div>
                   </Flipped>
                 ) : (
-                  <Flipped flipId={color}>
+                  <Flipped flipId={item.color}>
                     <div
                       className="shrink item"
-                      style={{ backgroundColor: color }}
+                      style={{ backgroundColor: item.color }}
                       onClick={() => this.setState({ focused: null })}
                     >
-                      <Flipped inverseFlipId={color} transformOrigin="0 0">
+                      <Flipped inverseFlipId={item.color} transformOrigin="0 0">
                         <div>
-                          <Flipped flipId={`${color}-text`} translate>
-                            <span>{this.state.focused}</span>
+                          <Flipped flipId={`${item.color}-text`} translate>
+                            <span>{item.name}</span>
                           </Flipped>
                         </div>
                       </Flipped>
@@ -56,17 +60,17 @@ class AnimatedSquare extends Component {
             </React.Fragment>
           ) : (
             <ul className="list">
-              {colors.map(color => (
-                <Flipped flipId={color}>
+              {this.props.items.map(item => (
+                <Flipped flipId={item.color}>
                   <li
                     className="listItem"
-                    style={{ backgroundColor: color }}
-                    onClick={() => this.setState({ focused: color })}
+                    style={{ backgroundColor: item.color }}
+                    onClick={() => this.setState({ focused: item })}
                   >
-                    <Flipped inverseFlipId={color}>
+                    <Flipped inverseFlipId={item.color}>
                       <div>
-                        <Flipped flipId={`${color}-text`} translate>
-                          <span>{color}</span>
+                        <Flipped flipId={`${item.color}-text`} translate>
+                          <span>{item.name}</span>
                         </Flipped>
                       </div>
                     </Flipped>

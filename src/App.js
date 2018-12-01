@@ -4,8 +4,7 @@ import './App.scss';
 import EarthContainer from './components/earth';
 import Text from './components/title';
 import Food from './sections/food';
-import Trash from './sections/trash';
-import Tree from './sections/tree';
+
 import Plx from 'react-plx';
 
 class App extends Component {
@@ -65,8 +64,6 @@ class App extends Component {
           />
         </div>
         <Food />
-        <Tree />
-        <Trash />
       </div>
     );
   }
