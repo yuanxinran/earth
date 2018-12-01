@@ -1,0 +1,50 @@
+.food {
+  .plate {
+    position: relative;
+    z-index: 1;
+    width: 60%;
+    margin: auto auto;
+
+    .title {
+      font-size: 2em;
+    }
+  }
+  .button {
+    width: 10%;
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    background-color: transparent;
+    border-color: transparent;
+    &:hover {
+      color: grey;
+      cursor: pointer;
+    }
+    &:active {
+      border-color: transparent;
+    }
+  }
+
+  .item {
+    z-index: 2;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    img {
+      width: 70%;
+      margin: auto auto;
+    }
+    .item-name {
+      font-size: 2em;
+      margin-bottom: 5px;
+    }
+    .item-water {
+      font-size: 1.5em;
+      background-color: #3c5082;
+    }
+  }
+}

@@ -6,6 +6,7 @@
     "bootstrap": "^4.1.1",
     "jquery-parallax.js": "^1.5.0",
     "masonry-layout": "^4.2.2",
+    "node-sass": "^4.10.0",
     "radium": "^0.25.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
@@ -23,7 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -33,5 +35,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "homepage": "https://yuanxinran.github.io/earth/",
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
