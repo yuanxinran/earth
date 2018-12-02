@@ -1,7 +1,7 @@
 {
   "main.css": "/earth/static/css/main.d83dd1e0.chunk.css",
-  "main.js": "/earth/static/js/main.1f80645a.chunk.js",
-  "main.js.map": "/earth/static/js/main.1f80645a.chunk.js.map",
+  "main.js": "/earth/static/js/main.019aa5d2.chunk.js",
+  "main.js.map": "/earth/static/js/main.019aa5d2.chunk.js.map",
   "static/css/1.a81e1578.chunk.css": "/earth/static/css/1.a81e1578.chunk.css",
   "static/js/1.c5aacf9a.chunk.js": "/earth/static/js/1.c5aacf9a.chunk.js",
   "static/js/1.c5aacf9a.chunk.js.map": "/earth/static/js/1.c5aacf9a.chunk.js.map",
@@ -24,7 +24,7 @@
   "static/media/nature.jpg": "/earth/static/media/nature.3ba681a8.jpg",
   "static/media/plan.jpg": "/earth/static/media/plan.db4a37eb.jpg",
   "static/media/vege.jpg": "/earth/static/media/vege.333176e2.jpg",
-  "static/media/water.css": "/earth/static/media/wrong.ed3e6fd3.png",
+  "static/media/water.css": "/earth/static/media/right.b11d445b.png",
   "static/media/bath.svg": "/earth/static/media/bath.48fc76a0.svg",
   "static/media/dishwasher.svg": "/earth/static/media/dishwasher.dd39ab6a.svg",
   "static/media/leak.svg": "/earth/static/media/leak.cc81c1ce.svg",
@@ -48,6 +48,6 @@
   "static/css/main.d83dd1e0.chunk.css.map": "/earth/static/css/main.d83dd1e0.chunk.css.map",
   "static/css/1.a81e1578.chunk.css.map": "/earth/static/css/1.a81e1578.chunk.css.map",
   "index.html": "/earth/index.html",
-  "precache-manifest.cd7f94e5eba95458e40681375ace61f0.js": "/earth/precache-manifest.cd7f94e5eba95458e40681375ace61f0.js",
+  "precache-manifest.2317700394180415f2551ed01e3e40aa.js": "/earth/precache-manifest.2317700394180415f2551ed01e3e40aa.js",
   "service-worker.js": "/earth/service-worker.js"
 }
