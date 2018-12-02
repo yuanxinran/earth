@@ -1,0 +1,223 @@
+#common-usage {
+  width: 90%;
+  margin: auto auto;
+  margin-top: 100px;
+  padding: 100px 0;
+  display: block;
+  .way {
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    img {
+      width: 5em;
+      height: 5em;
+    }
+  }
+}
+
+#hidden-usage {
+  width: 90%;
+  margin: auto auto;
+  padding: 80px 0;
+  background-color: #edf3ff;
+  display: block;
+  .title {
+    margin-bottom: 90px;
+    margin-top: 1em;
+    color: grey;
+    h2 {
+      color: grey;
+    }
+  }
+
+  .event {
+    width: 25%;
+    display: inline-block;
+    .event-description {
+      border: 2px transparent solid;
+      padding: 10px 0;
+      &:hover {
+        background-color: #edf7fa; /* For browsers that do not support gradients */
+        background-image: radial-gradient(
+          white 10%,
+          #edf7fa 90%
+        ); /* Standard syntax (must be last) */
+        border-radius: 20%;
+      }
+    }
+    img {
+      width: 30%;
+      height: 30%;
+      margin: 0 auto;
+    }
+
+    .animate-water {
+      width: 45%;
+      margin-left: 30%;
+      margin-top: 30px;
+    }
+    .text {
+      font-size: 40px;
+    }
+  }
+}
+
+.cup1 {
+  fill: #edf3ff;
+}
+.cup1,
+.cup2 {
+  stroke: #919191;
+  stroke-miterlimit: 10;
+  stroke-width: 5;
+}
+.cup2 {
+  fill: none;
+  stroke-width: 5;
+}
+
+#cup .content {
+  fill: lightblue;
+  /* transform: translate(0, -100%); */
+}
+
+#bottle .cup-animate {
+  animation: bottle 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation: bottle 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#power .cup-animate {
+  animation: power 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation: power 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#paper .cup-animate {
+  animation: paper 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation: paper 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#burger .cup-animate {
+  animation: burger 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation: burger 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.text-animate {
+  animation: text 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation: text 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes bottle {
+  from {
+    transform: translate(0, 299.07px);
+  }
+  to {
+    transform: translate(0, 250px);
+  }
+}
+@keyframes bottle {
+  from {
+    transform: translate(0, 299.07px);
+  }
+  to {
+    transform: translate(0, 250px);
+  }
+}
+
+@-webkit-keyframes power {
+  from {
+    transform: translate(0, 299.07px);
+  }
+  to {
+    transform: translate(0, 30px);
+  }
+}
+@keyframes power {
+  from {
+    transform: translate(0, 299.07px);
+  }
+  to {
+    transform: translate(0, 30px);
+  }
+}
+
+@-webkit-keyframes paper {
+  from {
+    transform: translate(0, 299.07px);
+  }
+  to {
+    transform: translate(0, 80px);
+  }
+}
+@keyframes paper {
+  from {
+    transform: translate(0, 299.07px);
+  }
+  to {
+    transform: translate(0, 80px);
+  }
+}
+
+@-webkit-keyframes burger {
+  from {
+    transform: translate(0, 299.07px);
+  }
+  to {
+    transform: translate(0, 30px);
+  }
+}
+@keyframes burger {
+  from {
+    transform: translate(0, 299.07px);
+  }
+  to {
+    transform: translate(0, 30px);
+  }
+}
+
+@-webkit-keyframes text {
+  0% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes text {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

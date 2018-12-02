@@ -1,0 +1,41 @@
+.basket {
+}
+.each {
+  position: relative;
+  height: 550px;
+
+  .text {
+    position: absolute;
+    left: 50%;
+    width: 80%;
+    top: 400px;
+    transform: translate(-50%, 0);
+    .title {
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+    }
+    .description {
+      font-size: 0.5 em;
+      font-family: 'Roboto', sans-serif;
+    }
+  }
+
+  .basket-img {
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    transform: translate(-50%, -50%);
+  }
+
+  .food-img {
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    transform: translate(-50%, -50%);
+    img {
+      width: 100%;
+    }
+  }
+}

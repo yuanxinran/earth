@@ -28,7 +28,10 @@ class PlateContainer extends Component {
       var preState = this.state.selected;
       this.moveOut(preState, 'left');
       this.moveIn(preState + 1, 'left');
-      this.setState({ selected: preState + 1 });
+      var pare = this;
+      setTimeout(function() {
+        pare.setState({ selected: preState + 1 });
+      }, 300);
     }
   }
 
@@ -37,7 +40,10 @@ class PlateContainer extends Component {
       var preState = this.state.selected;
       this.moveOut(preState, 'right');
       this.moveIn(preState - 1, 'right');
-      this.setState({ selected: preState - 1 });
+      var pare = this;
+      setTimeout(function() {
+        pare.setState({ selected: preState - 1 });
+      }, 300);
     }
   }
 
