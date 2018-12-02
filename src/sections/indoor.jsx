@@ -1,15 +1,29 @@
 import React, { Component } from 'react';
 import '../style/indoor.scss';
 import Plx from 'react-plx';
-import Cup from '../components/cup';
-import Steps from '../components/steps';
-import MoreTips from '../components/tips/more';
+import Cup from '../components/indoor/cup';
+import Steps from '../components/indoor/steps';
+import MoreTips from '../components/indoor/more';
+import ScrollTrigger from 'react-scroll-trigger';
+
 class Indoor extends Component {
+  constructor(props) {
+    super(props);
+    this.startAnimate = this.startAnimate.bind(this);
+  }
   state = {};
+
+  startAnimate() {
+    this.refs.bottles.classList.add('bottles-animate');
+    this.refs.current.classList.add('current-animate');
+    this.refs.pre.classList.add('pre-animate');
+    this.refs.textc.classList.add('pre-animate');
+    this.refs.textp.classList.add('pre-animate');
+  }
   render() {
     return (
-      <div className="indoor section">
-        <div id="hidden-usage">
+      <div className="indoor">
+        <div id="hidden-usage" className="section">
           <h1>How much water do we use on...?</h1>
 
           <div className="title">
@@ -43,7 +57,7 @@ class Indoor extends Component {
           </Plx>
         </div>
 
-        <div id="common-usage">
+        <div id="common-usage" className="section">
           <h2 className="title">A household per day...</h2>
           <div className="common">
             {uses.map(function(use, i) {
@@ -65,15 +79,75 @@ class Indoor extends Component {
           </div>
         </div>
 
-        <div id="change">
+        <div className="count section section-large">
+          <div className="img-container">
+            <div className="img" ref="current">
+              <img src={require('../imgs/indoor/bottles.png')} />
+              <ScrollTrigger onEnter={this.startAnimate} />
+              <div className="back" ref="bottles" />
+              <div className="text" ref="textc">
+                138 Gallons
+                <br />
+                <span>NOW</span>
+              </div>
+            </div>
+            <div className="img-pre" ref="pre">
+              <img src={require('../imgs/indoor/bottles.png')} />
+              <div className="back" />
+              <div className="text" ref="textp">
+                60 Gallons
+                <br />
+                <span>1950s</span>
+              </div>
+            </div>
+          </div>
+          <div className="title">
+            How much water does a household uses per day now and in 1950s?
+          </div>
+          <div className="explain">
+            On average in the US, direct indoor water use (water from the tap,
+            toilet, dishwasher, etc.) adds up to about 138 gallons per household
+            per day, or 60 gallons per person per day.
+          </div>
+        </div>
+
+        <div id="change2" className="section">
+          <div
+            className="title"
+            style={{ marginBottom: '300px', lineHeight: '250%' }}
+          >
+            <Plx parallaxData={getParallax(0)}>What</Plx>
+            <Plx parallaxData={getParallax(1)}>we</Plx>
+            <Plx parallaxData={getParallax(2)}>can</Plx>
+            <Plx parallaxData={getParallax(3)}>do?</Plx>
+            <Plx parallaxData={paraImage}>
+              <img
+                src={require('../imgs/indoor/fists.png')}
+                style={{ left: '0vw' }}
+              />
+              <img
+                src={require('../imgs/indoor/fists.png')}
+                style={{ left: '20vw' }}
+              />
+              <img
+                src={require('../imgs/indoor/fists.png')}
+                style={{ left: '70vw' }}
+              />
+            </Plx>
+          </div>
+
+          <MoreTips scroll={percentagePara} />
+        </div>
+
+        <div id="change" className="section">
           <Plx className="title" parallaxData={percentagePara}>
             <div
               className="badge badge-secondary"
               style={{ marginBottom: '20px' }}
             >
-              Small steps can make a change..
+              Start with small steps...
             </div>
-            <div style={{ color: 'grey' }}>
+            <div style={{ color: 'grey', fontSize: '1.5em' }}>
               How to save up to 140 litres / day
             </div>
           </Plx>
@@ -82,12 +156,12 @@ class Indoor extends Component {
           </Plx>
         </div>
 
-        <div id="change2">
+        {/* <div id="change2" className="section">
           <div className="title">
             <h2>And there are many many other things you can do...</h2>
           </div>
           <MoreTips scroll={percentagePara} />
-        </div>
+        </div> */}
       </div>
     );
   }
@@ -129,6 +203,59 @@ const uses = [
   }
 ];
 
+const styles = {
+  transfomr: 'translate(0, -50px)'
+};
+
+function getParallax(num) {
+  var result = [
+    {
+      start: 'self',
+      startOffset: `${70 * num}`,
+      duration: '150',
+      properties: [
+        {
+          startValue: 1,
+          endValue: 3,
+          property: 'scale'
+        }
+      ]
+    }
+  ];
+  return result;
+}
+
+const paraImage = [
+  {
+    start: '0',
+    end: 'self',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 0,
+        property: 'opacityFilter'
+      }
+    ]
+  },
+  {
+    start: 'self',
+    startOffset: '50px',
+    duration: '250',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 0.7,
+        property: 'opacityFilter'
+      },
+      {
+        startValue: 0,
+        endValue: -50,
+        property: 'translateY'
+      }
+    ]
+  }
+];
+
 const percentagePara = [
   {
     start: 'self',
@@ -137,11 +264,11 @@ const percentagePara = [
       {
         startValue: 0,
         endValue: 1,
-        property: 'opacityFilter'
+        property: 'opacity'
       },
       {
-        startValue: -50,
-        endValue: 0,
+        startValue: 0,
+        endValue: 50,
         property: 'translateY'
       }
     ]

@@ -7,6 +7,7 @@ import Food from './sections/food';
 import Indoor from './sections/indoor';
 import Tree from './sections/tree';
 import Plx from 'react-plx';
+import ScrollTrigger from 'scrolltrigger-classes';
 
 class App extends Component {
   render() {
@@ -40,7 +41,7 @@ class App extends Component {
             <span style={{ color: 'black' }}>everywhere..</span>
           </h2>
           <Usage
-            img={require('./imgs/water/agriculture.svg')}
+            img={require('./imgs/main/agriculture.svg')}
             name="Agriculture"
             percent="70%"
             color="#E3F1F4"
@@ -48,7 +49,7 @@ class App extends Component {
             ex2="meat"
           />
           <Usage
-            img={require('./imgs/water/industry.svg')}
+            img={require('./imgs/main/industry.svg')}
             name="Industry"
             percent="22%"
             color="#E3F1F4"
@@ -56,7 +57,7 @@ class App extends Component {
             ex2="car"
           />
           <Usage
-            img={require('./imgs/water/domestic.svg')}
+            img={require('./imgs/main/domestic.svg')}
             name="Domestic"
             percent="8%"
             color="#E3F1F4"
@@ -201,11 +202,11 @@ class Usage extends Component {
         </Plx>
         <Plx parallaxData={percentagePara} className="sub-img">
           <img
-            src={require(`./imgs/usage/${this.props.ex1}.png`)}
+            src={require(`./imgs/main/${this.props.ex1}.png`)}
             className="sub-img"
           />
           <img
-            src={require(`./imgs/usage/${this.props.ex2}.png`)}
+            src={require(`./imgs/main/${this.props.ex2}.png`)}
             className="sub-img"
           />
         </Plx>

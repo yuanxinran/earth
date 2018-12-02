@@ -125,6 +125,7 @@ class PlateContainer extends Component {
     var parent = this;
     return (
       <React.Fragment>
+        <h2 className="title">Find about the water in your plate!</h2>
         <div className="button" style={{ left: '5%' }} onClick={this.pre}>
           {'<'}
         </div>

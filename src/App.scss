@@ -1,6 +1,7 @@
+@import './style/color.scss';
+
 .App {
   text-align: center;
-  width: 95%;
   margin: 0 auto;
   font-family: Silom;
   overflow-x: hidden;
@@ -57,6 +58,53 @@
 .section {
   /* margin-top: 100px; */
   margin-bottom: 100px;
+}
+
+#usage {
+  display: block;
+  width: 90%;
+  margin: auto auto;
+  margin-bottom: 100px;
+  h2 {
+    margin-bottom: 2.5em;
+    color: grey;
+  }
+  .usage-part img {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .percent {
+    color: grey;
+    font-size: 4em;
+    font-family: 'PT Serif', serif;
+  }
+  .percent {
+    color: grey;
+    font-size: 4em;
+    font-family: 'PT Serif', serif;
+  }
+  .arrow {
+    width: 15%;
+    margin: auto auto;
+  }
+  .sub-img {
+    width: 90%;
+    padding: 10px 0px;
+    margin: auto auto;
+    border-radius: 10px;
+    background-color: #effbfc;
+    img {
+      width: 20%;
+    }
+    img + img {
+      margin-left: 50px;
+    }
+  }
+}
+
+#usage .arrow {
+  width: 15%;
+  margin: auto auto;
 }
 
 /* #water-intro {

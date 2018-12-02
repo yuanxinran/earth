@@ -1,4 +1,217 @@
+@import './color.scss';
+
+.section {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.section-large {
+  margin-bottom: 350px;
+}
+
+#change {
+  margin-top: 300px;
+}
+
+#change2 {
+  width: 90%;
+  margin: auto auto;
+  .title {
+    font-size: 3vw;
+    position: relative;
+    padding-top: 10vw;
+    padding-bottom: 15vw;
+    background-color: $mint;
+    background-image: radial-gradient(180deg, white 20%, $mint 80%);
+
+    img {
+      position: absolute;
+      top: 100%;
+      width: 15vw;
+    }
+  }
+
+  .sub-title {
+    font-size: 1em;
+  }
+}
+
+.tips {
+  width: 90vw;
+  margin: auto auto;
+}
+
+.count {
+  .explain {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+    width: 80%;
+    margin: auto auto;
+  }
+  .title {
+    font-size: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 0.5vw;
+  }
+  .img-container {
+    position: relative;
+    .img {
+      width: 40vw;
+      height: 39vw;
+      overflow: hidden;
+      margin: auto auto;
+      position: relative;
+      background-image: radial-gradient(white 10%, #edf7fa 90%);
+      img {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+      .back {
+        background-color: #c2d6f1;
+        height: 40vw;
+        width: 100%;
+        transform: translate(0, 40vw);
+      }
+
+      .text {
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        z-index: 3;
+        transform: translate(-50%, -50%);
+        font-size: 4vw;
+        span {
+          font-size: 3vw;
+        }
+      }
+    }
+
+    .img-pre {
+      opacity: 0;
+      width: 20vw;
+      height: 20vw;
+      position: absolute;
+      left: 60vw;
+      top: 100%;
+      transform: translate(0, -100%);
+      img {
+        width: 100%;
+        background-color: #c2d6f1;
+      }
+
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2vw;
+        width: 100%;
+        opacity: 0;
+        span {
+          font-size: 1.5vw;
+        }
+      }
+    }
+  }
+}
+
+.bottles-animate {
+  animation: fill 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation: fill 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.current-animate {
+  animation: current 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation: current 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s;
+}
+
+.pre-animate {
+  animation: prev 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation: prev 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s;
+}
+
+@-webkit-keyframes current {
+  from {
+    transform: translate(0vw, 0px);
+  }
+  to {
+    transform: translate(-15vw, 0px);
+  }
+}
+@keyframes current {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(-15vw, 0px);
+  }
+}
+
+@-webkit-keyframes prev {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes prev {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fill {
+  from {
+    transform: translate(0, 40vw);
+  }
+  to {
+    transform: translate(0, 0vw);
+  }
+}
+@keyframes fill {
+  from {
+    transform: translate(0, 40vw);
+  }
+  to {
+    transform: translate(0, 0vw);
+  }
+}
+
 #common-usage {
+  .title {
+    margin-bottom: 0px;
+  }
   width: 90%;
   margin: auto auto;
   margin-top: 100px;
@@ -19,10 +232,10 @@
   width: 90%;
   margin: auto auto;
   padding: 80px 0;
-  background-color: #edf3ff;
+  padding-bottom: 120px;
+  background-color: $light-blue;
   display: block;
   .title {
-    margin-bottom: 90px;
     margin-top: 1em;
     color: grey;
     h2 {

@@ -1,3 +1,4 @@
+@import '../style/color.scss';
 .food {
   width: 100%;
 
@@ -16,10 +17,14 @@
     width: 100%;
   }
 
+  .plate-container {
+    width: 100%;
+  }
+
   .plate {
     position: relative;
     z-index: 1;
-    width: 100%;
+    width: 80%;
     margin: auto auto;
     .background {
       width: 80%;
@@ -27,7 +32,8 @@
     }
 
     .title {
-      font-size: 2em;
+      font-size: 4vw;
+      transform: translate(0, 5vw);
     }
     .button {
       width: 10%;

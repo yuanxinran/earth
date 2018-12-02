@@ -40,9 +40,10 @@ class Food extends Component {
   render() {
     return (
       <div className="food">
-        <div className="plate section">
-          <h2 className="title">Find about the water in your plate!</h2>
-          <PlateContainer />
+        <div className="plate-container section">
+          <div className="plate section">
+            <PlateContainer />
+          </div>
         </div>
 
         <div className="category section">
