@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/earth/static/media/wrong.ed3e6fd3.png"
   },
   {
-    "revision": "019aa5d2bac658754210",
+    "revision": "6d597b70287f3db54790",
     "url": "/earth/static/css/main.d83dd1e0.chunk.css"
   },
   {
@@ -88,8 +88,8 @@ self.__precacheManifest = [
     "url": "/earth/static/media/vege.333176e2.jpg"
   },
   {
-    "revision": "019aa5d2bac658754210",
-    "url": "/earth/static/js/main.019aa5d2.chunk.js"
+    "revision": "6d597b70287f3db54790",
+    "url": "/earth/static/js/main.6d597b70.chunk.js"
   },
   {
     "revision": "b11d445b61066a1f60a1d79bfe5ab3de",
@@ -176,7 +176,7 @@ self.__precacheManifest = [
     "url": "/earth/static/css/1.a81e1578.chunk.css"
   },
   {
-    "revision": "60c1a2da52b74f401244ed0bea73ac83",
+    "revision": "1cf4e60de9604eb9feba58ba055dabf0",
     "url": "/earth/index.html"
   }
 ];
