@@ -5,7 +5,7 @@ import EarthContainer from './components/earth';
 import Text from './components/title';
 import Food from './sections/food';
 import Indoor from './sections/indoor';
-import Tree from './sections/tree';
+import Product from './sections/product';
 import Plx from 'react-plx';
 import ScrollTrigger from 'scrolltrigger-classes';
 
@@ -67,6 +67,7 @@ class App extends Component {
         </div>
         <Food />
         <Indoor />
+        <Product />
       </div>
     );
   }

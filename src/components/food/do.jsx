@@ -119,16 +119,32 @@ class Do extends Component {
           <div className="col-sm-6 container">
             {cards.map(function(card, i) {
               if (i < parent.state.selected - 1) {
-                return <Card className="first" item={card} />;
+                return <Card className="first" item={card} key={i} />;
               } else if (i == parent.state.selected - 1) {
-                return <Card className="first" id="pre-card" item={card} />;
+                return (
+                  <Card className="first" id="pre-card" item={card} key={i} />
+                );
               } else if (i == parent.state.selected) {
-                return <Card className="first" id="first-card" item={card} />;
+                return (
+                  <Card className="first" id="first-card" item={card} key={i} />
+                );
               } else if (i == parent.state.selected + 1) {
-                return <Card className="second" id="second-card" item={card} />;
+                return (
+                  <Card
+                    className="second"
+                    id="second-card"
+                    item={card}
+                    key={i}
+                  />
+                );
               } else {
                 return (
-                  <Card className="second" item={card} style={{ opacity: 0 }} />
+                  <Card
+                    className="second"
+                    item={card}
+                    style={{ opacity: 0 }}
+                    key={i}
+                  />
                 );
               }
             })}

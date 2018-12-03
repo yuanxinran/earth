@@ -77,7 +77,7 @@ class Each extends Component {
         <img src={this.props.basket.img} className="basket-img" />
         {this.props.basket.food.map(function(f, i) {
           return (
-            <Plx parallaxData={getpData(f)}>
+            <Plx parallaxData={getpData(f)} key={i}>
               <div className="food-img">
                 <div>{f.name}</div>
                 <img src={require(`../../imgs/food/footprint/${f.img}.png`)} />

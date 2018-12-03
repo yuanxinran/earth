@@ -75,6 +75,7 @@ class Gallery extends React.Component {
                 parallaxData={percentagePara}
                 className="image-container"
                 style={{ width: '32%', border: '0.5vw solid white' }}
+                key={i}
               >
                 <img style={{ width: '100%' }} src={tip.img} />
                 <div className="overlay" style={parent.getStyle(tip.show)}>
