@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "48fc76a06bd0cd5dfb6967a3b26575ee",
-    "url": "/earth/static/media/bath.48fc76a0.svg"
+    "revision": "cc81c1ce241a4637be2596b3f806bfbb",
+    "url": "/earth/static/media/leak.cc81c1ce.svg"
   },
   {
-    "revision": "303601dc0f3ccc8bbf0d",
-    "url": "/earth/static/css/main.cfdeb35d.chunk.css"
+    "revision": "6d1d8f1e27885b1dcc3b",
+    "url": "/earth/static/css/main.7745eafe.chunk.css"
   },
   {
     "revision": "c22b6e954c0465b26a47acc17f5831ce",
     "url": "/earth/static/media/domestic.c22b6e95.svg"
   },
   {
-    "revision": "b58ced04fdbea81d11d2",
-    "url": "/earth/static/js/1.b58ced04.chunk.js"
+    "revision": "7430c73d19dd95da366c",
+    "url": "/earth/static/js/1.7430c73d.chunk.js"
   },
   {
     "revision": "d09676ea802a05ab35b0",
@@ -22,6 +22,10 @@ self.__precacheManifest = [
   {
     "revision": "0c2bfca3685f2b7321ed98fd1f195aa6",
     "url": "/earth/static/media/fists.0c2bfca3.png"
+  },
+  {
+    "revision": "7870742818a8e59dd5e9bd5669d9f7fa",
+    "url": "/earth/static/media/shopping.78707428.png"
   },
   {
     "revision": "2f2864fc6cf2476bb612bf291e3c4672",
@@ -92,24 +96,24 @@ self.__precacheManifest = [
     "url": "/earth/static/media/vege.333176e2.jpg"
   },
   {
-    "revision": "ed3e6fd3a8cc84ccf765c35cf969ec7f",
-    "url": "/earth/static/media/wrong.ed3e6fd3.png"
-  },
-  {
     "revision": "b11d445b61066a1f60a1d79bfe5ab3de",
     "url": "/earth/static/media/right.b11d445b.png"
   },
   {
-    "revision": "303601dc0f3ccc8bbf0d",
-    "url": "/earth/static/js/main.303601dc.chunk.js"
+    "revision": "ed3e6fd3a8cc84ccf765c35cf969ec7f",
+    "url": "/earth/static/media/wrong.ed3e6fd3.png"
+  },
+  {
+    "revision": "48fc76a06bd0cd5dfb6967a3b26575ee",
+    "url": "/earth/static/media/bath.48fc76a0.svg"
   },
   {
     "revision": "dd39ab6a3ee64545b517c2c997e51319",
     "url": "/earth/static/media/dishwasher.dd39ab6a.svg"
   },
   {
-    "revision": "cc81c1ce241a4637be2596b3f806bfbb",
-    "url": "/earth/static/media/leak.cc81c1ce.svg"
+    "revision": "6d1d8f1e27885b1dcc3b",
+    "url": "/earth/static/js/main.6d1d8f1e.chunk.js"
   },
   {
     "revision": "15b5b3fae20b266a98cd8d5668e85c92",
@@ -188,6 +192,26 @@ self.__precacheManifest = [
     "url": "/earth/static/media/bottle.cc183c9d.png"
   },
   {
+    "revision": "9b48410c90dbf16a1bbdd853d199e9cc",
+    "url": "/earth/static/media/bag.9b48410c.png"
+  },
+  {
+    "revision": "f82fbdb00d904075b27b595968154dc7",
+    "url": "/earth/static/media/boots.f82fbdb0.png"
+  },
+  {
+    "revision": "8173310f9456b9c9af89d504242a98d0",
+    "url": "/earth/static/media/jeans.8173310f.png"
+  },
+  {
+    "revision": "4bcb1713d9c5e26ceb68373a0d92cb8f",
+    "url": "/earth/static/media/phone.4bcb1713.png"
+  },
+  {
+    "revision": "fe46ccb90c243c05e71065f4a607369a",
+    "url": "/earth/static/media/shirt.fe46ccb9.png"
+  },
+  {
     "revision": "15adc0700aaac41c41fd23a9d9ac0f0d",
     "url": "/earth/static/media/agriculture.15adc070.svg"
   },
@@ -196,11 +220,11 @@ self.__precacheManifest = [
     "url": "/earth/static/media/industry.b686e2cb.svg"
   },
   {
-    "revision": "b58ced04fdbea81d11d2",
-    "url": "/earth/static/css/1.f0d4851b.chunk.css"
+    "revision": "7430c73d19dd95da366c",
+    "url": "/earth/static/css/1.89e67f24.chunk.css"
   },
   {
-    "revision": "2a16c759ad05d9be51c3c2b981439462",
+    "revision": "c0a76b649998d918e99c9619a9a9d714",
     "url": "/earth/index.html"
   }
 ];
