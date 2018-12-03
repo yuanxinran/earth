@@ -1,6 +1,33 @@
 @import '../style/color.scss';
 
 .product {
+  .save {
+    #product-carousel {
+      .card {
+        .img {
+          img {
+            width: 100%;
+          }
+        }
+        .text {
+          position: relative;
+          img {
+            position: absolute;
+            left: 0;
+            width: 10%;
+          }
+          .des {
+            position: relative;
+            margin-left: 20%;
+            width: 80%;
+            text-align: left;
+            display: inline-block;
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
   .buy {
     background-color: $mint;
     padding: 100px 0px;

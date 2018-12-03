@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ProductUse from '../components/product/use.jsx';
 import Buy from '../components/product/buy.jsx';
+import Save from '../components/product/saves.jsx';
 import '../style/tree.css';
 import Plx from 'react-plx';
 import '../style/product.scss';
@@ -17,7 +18,9 @@ class Product extends Component {
           <Buy />
         </div>
 
-        <div className="save section" />
+        <div className="save section">
+          <Save />
+        </div>
       </div>
     );
   }

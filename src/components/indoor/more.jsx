@@ -74,7 +74,7 @@ class Gallery extends React.Component {
               <Plx
                 parallaxData={percentagePara}
                 className="image-container"
-                style={{ width: '32%', border: '0.5vw solid white' }}
+                style={{ width: '31%', border: '0.5vw solid white' }}
                 key={i}
               >
                 <img style={{ width: '100%' }} src={tip.img} />
