@@ -49,17 +49,21 @@ class Gallery extends React.Component {
       <div className="gallery-container">
         <div
           style={{
-            fontSize: '1.5em',
+            fontSize: '1vw',
             margin: 'auto auto',
-            width: '90%',
+            width: '94%',
             marginBottom: '2em',
             textAlign: 'left'
           }}
         >
-          <span style={{ fontSize: '2.5em' }}>Fortunately,</span>
-          <br /> saving water around the house is easier now than ever before.
-          Switching to water-saving fixtures and appliances can reduce indoor
-          water use by twenty percent.{' '}
+          <span style={{ fontSize: '2.5vw' }}>
+            There are many things that we can do.
+          </span>
+          <br />{' '}
+          <span style={{ color: 'grey' }}>
+            There are lots of opportunities to cut back on water use in the
+            kitchen, bathroom and laundry room and even by fixing leaks.
+          </span>
         </div>
         <Masonry
           className="my-gallery-class" // default ''

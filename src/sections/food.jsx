@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Categories from '../components/square';
 import Plx from 'react-plx';
-
+import Text from '../components/text.jsx';
 import Basket from '../components/food/basket.jsx';
 import Do from '../components/food/do.jsx';
 import PlateContainer from '../components/food/plate';
@@ -11,7 +11,7 @@ import '../style/water.css';
 const category = [
   {
     _id: 0,
-    color: '#D2F2FF',
+    color: '#5495D3',
     name: 'Blue',
     img: require('../imgs/food/crop.png'),
     description:
@@ -19,7 +19,7 @@ const category = [
   },
   {
     _id: 1,
-    color: '#D0E6BF',
+    color: '#4EB977',
     img: require('../imgs/food/rain.png'),
     name: 'Green',
     description:
@@ -27,7 +27,7 @@ const category = [
   },
   {
     _id: 2,
-    color: '#DEDEDE',
+    color: '#616161',
     img: require('../imgs/food/wave.png'),
     name: 'Grey',
     description:
@@ -40,6 +40,12 @@ class Food extends Component {
   render() {
     return (
       <div className="food">
+        <div className="section">
+          <Text
+            font="1.7vw"
+            content="You might be surprised by how much water it takes to grow and make our food. In the US, agriculture is responsible for 80 percent of all water consumed"
+          />
+        </div>
         <div className="plate-container section">
           <div className="plate section">
             <PlateContainer />
@@ -47,10 +53,21 @@ class Food extends Component {
         </div>
 
         <div className="category section">
+          <Text
+            font="1.7vw"
+            content="The reason food’s water footprint is so big has to do with the three parts of a water footprint: the blue, green and grey water components. Each part represents the volume of water consumed, evaporated and polluted when an item is produced."
+            top="0"
+          />
           <Categories items={category} />
         </div>
 
         <div className="basket section">
+          <div style={{ marginBottom: '10vw' }}>
+            <Text
+              font="1.7vw"
+              content="It takes water – a lot of it – to grow, process and transport your food. When you eat lower on the food chain, eat more whole foods and waste less food, you also save water."
+            />
+          </div>
           <Basket />
         </div>
 

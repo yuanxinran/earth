@@ -72,86 +72,77 @@ const tips = [
     _id: 0,
     img: require('../../imgs/indoor/tips/cooking.jpg'),
     name: 'Cooking',
-    description: 'hahah'
+    description:
+      'Wash vegetables and fruits in a large bowl or tub of water and scrub them with a vegetable brush instead of using your faucet as a power-washer.'
   },
   {
     _id: 1,
     img: require('../../imgs/indoor/tips/dish.jpg'),
     name: 'Dish Washing',
-    description: 'hahah'
+    description:
+      'Get a dishwasher. They almost always use less water than washing dishes by hand, especially with water- and energy-efficient models.'
   },
   {
     _id: 2,
     img: require('../../imgs/indoor/tips/washing.jpg'),
-    name: 'Washing Machine',
-    description: 'hahah'
+    name: 'Laundry',
+    description: 'Choose an ENERGY STAR water- and energy-efficient model.'
   },
   {
     _id: 3,
     img: require('../../imgs/indoor/tips/bath.jpg'),
     name: 'Bath & Shower',
-    description: 'hahah'
+    description: 'Think of baths as an occasional treat and stick to showers. '
   },
   {
     _id: 4,
     img: require('../../imgs/indoor/tips/toilet.jpg'),
     name: 'Toilet',
-    des: 'hahah'
+    description:
+      'Put a plastic bottle filled with water in your toilet tank to reduce the amount of water used per flush'
   },
   {
-    _id: 1,
+    _id: 5,
     name: 'Recyling',
-    description: 'The production of everything needs water',
+    description:
+      'Recycle (or reuse) every bit of plastic you can and only throw it in the trash as a last resort.',
     img: require('../../imgs/watertips/recycling.jpg')
   },
   {
-    _id: 2,
-    name: 'Bring your own bottle',
-    description:
-      'It takes at least as much water to make the plastic bottle as the drinking water it holds. ',
-    img: require('../../imgs/watertips/bottle.jpg')
-  },
-  {
-    _id: 3,
+    _id: 6,
     name: 'Cut down your shower time',
     description: 'Cut 5 mins from your shower time ',
     img: require('../../imgs/watertips/shower.png')
   },
   {
-    _id: 4,
+    _id: 7,
     name: 'Carry reusable tableware',
     description: 'Cut 5 mins from your shower time ',
     img: require('../../imgs/watertips/tableware.jpg')
   },
   {
-    _id: 5,
+    _id: 8,
     name: 'Collect rain water',
     description:
       'Collect rain water through gutters. Use them to water your flowers.',
     img: require('../../imgs/watertips/rain.jpg')
   },
   {
-    _id: 6,
+    _id: 9,
     name: 'Fill the sink',
     description:
       'Fill up your sink with water, instead of letting it run the whole time that you’re scrubbing.',
     img: require('../../imgs/watertips/plates.jpg')
   },
   {
-    _id: 7,
+    _id: 10,
     name: 'Check your bill',
     description:
       'If your water bill spikes suddenly, there’s a good chance that a leak is the culprit.',
     img: require('../../imgs/watertips/bill.jpg')
   },
   {
-    _id: 8,
-    name: 'Recycle water',
-    description: 'Reuse the water you used to wash vegetables.',
-    img: require('../../imgs/watertips/fruits.png')
-  },
-  {
-    _id: 8,
+    _id: 11,
     name: '...',
     description: null,
     img: require('../../imgs/watertips/blank.png'),

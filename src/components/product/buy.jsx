@@ -54,7 +54,7 @@ class Buy extends Component {
         </div>
         <div className="subtitle">Input the # of items you bought!</div>
 
-        <div className="form row">
+        <div className="form row" style={{ backgroundColor: 'transparent' }}>
           <div>
             {this.state.items.map(function(item, i) {
               return (

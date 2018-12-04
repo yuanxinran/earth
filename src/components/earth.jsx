@@ -21,7 +21,8 @@ const exampleParallaxData = [
       },
       {
         startValue: 0,
-        endValue: 200,
+        endValue: 30,
+        unit: 'vh',
         property: 'translateY'
       },
       {
@@ -43,8 +44,9 @@ const exampleParallaxData = [
         property: 'scale'
       },
       {
-        startValue: 200,
+        startValue: 30,
         endValue: 0,
+        unit: 'vh',
         property: 'translateY'
       },
       {
@@ -57,8 +59,7 @@ const exampleParallaxData = [
   {
     start: '#food-intro',
     startOffset: '100',
-    end: '#food-intro',
-    endOffset: '500',
+    duration: '300',
     properties: [
       {
         startValue: 1,
@@ -67,7 +68,8 @@ const exampleParallaxData = [
       },
       {
         startValue: 0,
-        endValue: 200,
+        endValue: 30,
+        unit: 'vh',
         property: 'translateY'
       },
       {
@@ -84,8 +86,8 @@ const exampleParallaxData = [
   },
   {
     start: '#food-intro',
-    startOffset: '900',
-    duration: '400',
+    startOffset: '700',
+    duration: '300',
     properties: [
       {
         startValue: 5,
@@ -93,8 +95,112 @@ const exampleParallaxData = [
         property: 'scale'
       },
       {
-        startValue: 200,
+        startValue: 30,
         endValue: 0,
+        unit: 'vh',
+        property: 'translateY'
+      },
+      {
+        startValue: 1,
+        endValue: 0.3,
+        property: 'opacityFilter'
+      }
+    ]
+  },
+  {
+    start: '#indoor-intro',
+    startOffset: '100',
+    duration: '300',
+    properties: [
+      {
+        startValue: 1,
+        endValue: 5,
+        property: 'scale'
+      },
+      {
+        startValue: 0,
+        endValue: 30,
+        unit: 'vh',
+        property: 'translateY'
+      },
+      {
+        startValue: 0.3,
+        endValue: 1,
+        property: 'opacityFilter'
+      },
+      {
+        startValue: 135,
+        endValue: 225,
+        property: 'rotate'
+      }
+    ]
+  },
+  {
+    start: '#indoor-intro',
+    startOffset: '700',
+    duration: '300',
+    properties: [
+      {
+        startValue: 5,
+        endValue: 1,
+        property: 'scale'
+      },
+      {
+        startValue: 30,
+        endValue: 0,
+        unit: 'vh',
+        property: 'translateY'
+      },
+      {
+        startValue: 1,
+        endValue: 0.3,
+        property: 'opacityFilter'
+      }
+    ]
+  },
+
+  {
+    start: '#product-intro',
+    startOffset: '100',
+    duration: '300',
+    properties: [
+      {
+        startValue: 1,
+        endValue: 5,
+        property: 'scale'
+      },
+      {
+        startValue: 0,
+        endValue: 30,
+        unit: 'vh',
+        property: 'translateY'
+      },
+      {
+        startValue: 0.3,
+        endValue: 1,
+        property: 'opacityFilter'
+      },
+      {
+        startValue: 225,
+        endValue: 315,
+        property: 'rotate'
+      }
+    ]
+  },
+  {
+    start: '#product-intro',
+    startOffset: '700',
+    duration: '300',
+    properties: [
+      {
+        startValue: 5,
+        endValue: 1,
+        property: 'scale'
+      },
+      {
+        startValue: 30,
+        endValue: 0,
+        unit: 'vh',
         property: 'translateY'
       },
       {

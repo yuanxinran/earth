@@ -30,9 +30,7 @@ class App extends Component {
           style={{ backgroundImage: `url(${drop})` }}
           id="water-intro"
         >
-          <div>
-            <h1>Save Water</h1>
-          </div>
+          <div className="title">We use water everywhere</div>
         </div>
         <div className="intro-para">
           <WaterCarousel />

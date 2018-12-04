@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../style/indoor.scss';
 import Plx from 'react-plx';
+import Text from '../components/text.jsx';
 import Cup from '../components/indoor/cup';
 import Steps from '../components/indoor/steps';
 import MoreTips from '../components/indoor/more';
@@ -57,6 +58,13 @@ class Indoor extends Component {
           </Plx>
         </div>
 
+        <div className="section">
+          <Text
+            font="1.5vw"
+            content="The average American family of four uses 400 gallons of water per day. On average, approximately 70 percent of that water is used indoors, with the bathroom being the largest consumer (a toilet alone can use 27 percent!)."
+          />
+        </div>
+
         <div id="common-usage" className="section">
           <h2 className="title">A household per day...</h2>
           <div className="common">
@@ -79,7 +87,7 @@ class Indoor extends Component {
           </div>
         </div>
 
-        <div className="count section section-large">
+        <div className="count section">
           <div className="img-container">
             <div className="img" ref="current">
               <img src={require('../imgs/indoor/bottles.png')} />
@@ -111,50 +119,79 @@ class Indoor extends Component {
           </div>
         </div>
 
-        <div id="change2" className="section">
-          <div
-            className="title"
-            style={{ marginBottom: '300px', lineHeight: '250%' }}
-          >
-            <Plx parallaxData={getParallax(0)}>What</Plx>
-            <Plx parallaxData={getParallax(1)}>we</Plx>
-            <Plx parallaxData={getParallax(2)}>can</Plx>
-            <Plx parallaxData={getParallax(3)}>do?</Plx>
-            <Plx parallaxData={paraImage}>
-              <img
-                src={require('../imgs/indoor/fists.png')}
-                style={{ left: '0vw' }}
-              />
-              <img
-                src={require('../imgs/indoor/fists.png')}
-                style={{ left: '20vw' }}
-              />
-              <img
-                src={require('../imgs/indoor/fists.png')}
-                style={{ left: '70vw' }}
-              />
+        <div
+          className="change-title"
+          style={{ marginBottom: '300px', lineHeight: '250%' }}
+        >
+          <div className="ctitle">
+            <Plx
+              parallaxData={getParallax(0)}
+              style={{ display: 'inline-block', marginRight: '1vw' }}
+            >
+              What
+            </Plx>
+            <Plx
+              parallaxData={getParallax(1)}
+              style={{ display: 'inline-block', marginRight: '1vw' }}
+            >
+              we
+            </Plx>
+            <Plx
+              parallaxData={getParallax(2)}
+              style={{ display: 'inline-block', marginRight: '1vw' }}
+            >
+              can
+            </Plx>
+            <Plx
+              parallaxData={getParallax(3)}
+              style={{ display: 'inline-block' }}
+            >
+              do?
             </Plx>
           </div>
+          <div id="small">
+            <Plx className="title" parallaxData={percentagePara}>
+              <div
+                style={{
+                  fontSize: '1vw',
+                  margin: 'auto auto',
+                  width: '90%',
+                  marginBottom: '2em'
+                }}
+              />
+            </Plx>
+            <Plx parallaxData={percentagePara}>
+              <Steps />
+            </Plx>
+          </div>
+        </div>
 
+        <div className="section" style={{ marginTop: '50vh' }}>
+          <Text
+            font="1.3vw"
+            content="Fortunately, saving water around the house is easier now than ever before. Switching to water-saving fixtures and appliances can reduce indoor water use by twenty percent. "
+          />
+
+          <Text
+            font="1.3vw"
+            content="Newer bathroom fixtures and appliances like toilets, showerheads and faucets are designed to be more water-efficient than older models and can save hundreds of gallons a month. "
+          />
+
+          <Text
+            font="1.3vw"
+            content="Likewise, newer dishwashers and clothes washers use water much more efficiently than older models. "
+          />
+          <Text
+            font="1.3vw"
+            content="With a little bit of research, water- and energy-saving products can be purchased that provide enhanced performance, help save on water bills and have the added benefit of saving water for future generations. "
+          />
+        </div>
+
+        <div id="change2" className="section">
           <MoreTips scroll={percentagePara} />
         </div>
 
-        <div id="change" className="section">
-          <Plx className="title" parallaxData={percentagePara}>
-            <div
-              className="badge badge-secondary"
-              style={{ marginBottom: '20px' }}
-            >
-              Start with small steps...
-            </div>
-            <div style={{ color: 'grey', fontSize: '1.5em' }}>
-              How to save up to 140 litres / day
-            </div>
-          </Plx>
-          <Plx parallaxData={percentagePara}>
-            <Steps />
-          </Plx>
-        </div>
+        <div id="change" className="section" />
 
         {/* <div id="change2" className="section">
           <div className="title">
@@ -210,14 +247,41 @@ const styles = {
 function getParallax(num) {
   var result = [
     {
+      start: 0,
+      end: 'self',
+      endOffset: `${70 * num}`,
+      properties: [
+        {
+          startValue: 0,
+          endValue: 0,
+          property: 'opacityFilter'
+        },
+        {
+          startValue: 0.3,
+          endValue: 0.3,
+          property: 'scale'
+        }
+      ]
+    },
+    {
       start: 'self',
       startOffset: `${70 * num}`,
       duration: '150',
       properties: [
         {
-          startValue: 1,
-          endValue: 3,
+          startValue: 0.3,
+          endValue: 1,
           property: 'scale'
+        },
+        {
+          startValue: 0,
+          endValue: 1,
+          property: 'opacityFilter'
+        },
+        {
+          startValue: 50,
+          endValue: 0,
+          property: 'translateY'
         }
       ]
     }
@@ -244,12 +308,12 @@ const paraImage = [
     properties: [
       {
         startValue: 0,
-        endValue: 0.7,
+        endValue: 0.6,
         property: 'opacityFilter'
       },
       {
-        startValue: 0,
-        endValue: -50,
+        startValue: 50,
+        endValue: 0,
         property: 'translateY'
       }
     ]

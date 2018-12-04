@@ -1,35 +1,40 @@
 @import './color.scss';
 
 .section {
-  margin-top: 200px;
-  margin-bottom: 200px;
+  margin-top: 40vh;
+  margin-bottom: 40vh;
 }
 
 .section-large {
-  margin-bottom: 350px;
+  margin-bottom: 50vh;
 }
 
 #change {
   margin-top: 300px;
 }
 
-#change2 {
-  width: 90%;
-  margin: auto auto;
-  .title {
-    font-size: 3vw;
+.change-title {
+  background-image: $mint;
+  background-image: radial-gradient(0deg, white 20%, $mint 80%);
+  .ctitle {
+    width: 100%;
+    margin: auto auto;
+    font-size: 5vw;
     position: relative;
     padding-top: 10vw;
-    padding-bottom: 15vw;
-    background-color: $mint;
-    background-image: radial-gradient(180deg, white 20%, $mint 80%);
+    padding-bottom: 8vw;
 
     img {
       position: absolute;
       top: 100%;
-      width: 15vw;
+      width: 10vw;
     }
   }
+}
+
+#change2 {
+  width: 90%;
+  margin: auto auto;
 
   .sub-title {
     font-size: 1em;
@@ -42,6 +47,7 @@
 }
 
 .count {
+  margin-top: 10vh;
   .explain {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5vw;
@@ -209,6 +215,7 @@
 }
 
 #common-usage {
+  margin-bottom: 10vh;
   .title {
     margin-bottom: 0px;
   }
@@ -219,8 +226,8 @@
   display: block;
   .way {
     font-size: 1em;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
     img {
       width: 5em;
       height: 5em;
@@ -433,4 +440,60 @@
   to {
     opacity: 1;
   }
+}
+
+#small {
+  width: 70%;
+  margin: auto auto;
+  font-size: 1em;
+  .cls-1 {
+    fill: #9dd5e8;
+  }
+  .cls-2 {
+    fill: #d6e5e3;
+  }
+
+  .cls-3 {
+    stroke: #9dc8cf;
+    stroke-miterlimit: 10;
+    stroke-width: 3px;
+    fill: transparent;
+  }
+
+  .cls-4 {
+    fill: transparent;
+  }
+
+  .active-step {
+    stroke: #7087ce;
+    stroke-miterlimit: 10;
+    stroke-width: 3px;
+  }
+
+  .wrong::before {
+    content: ' ';
+    background-image: url('../imgs/usage2/wrong.png');
+    background-size: 1em 1em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+  }
+
+  .right::before {
+    content: ' ';
+    background-image: url('../imgs/usage2/right.png');
+    background-size: 1em 1em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+  }
+}
+
+#small .wrong,
+#small .right {
+  font-size: 1em;
+  text-align: left;
+  color: #4d4d4d;
 }

@@ -42,11 +42,6 @@ class Steps extends Component {
                 }}
               >
                 {this.state.tips.name}
-                <img
-                  src={this.state.tips.img}
-                  style={{ width: '2em', marginLeft: '1em' }}
-                  align="bottom"
-                />
               </div>
               <div style={{ marginBottom: '30px' }}>
                 {/* <div className="col-sm-3">
@@ -54,21 +49,6 @@ class Steps extends Component {
                 </div> */}
                 <div className="wrong">{this.state.tips.wrong}</div>
                 <div className="right">{this.state.tips.right}</div>
-              </div>
-              <div style={{ color: 'grey', lineHeight: '1em' }}>Save:</div>
-              <div
-                style={{
-                  marginBottom: '20px',
-                  fontSize: '1em',
-                  color: '#4d4d4d'
-                }}
-                className="save"
-              >
-                {this.state.tips.save} ≈ 90 *
-                <img
-                  src={require('../../imgs/usage2/bottle.png')}
-                  style={{ width: '0.7em', marginLeft: '0.4em' }}
-                />
               </div>
             </div>
           </div>
