@@ -40,7 +40,7 @@ const para = [
   {
     start: 'self',
     startOffset: '150',
-    duration: '200',
+    duration: '150',
     properties: [
       {
         startValue: 0,

@@ -115,7 +115,7 @@ class Save extends Component {
               <div className="text-title">{tip.title}</div>
               {tip.points.map(function(p, j) {
                 return (
-                  <div style={{ width: '100%' }}>
+                  <div style={{ width: '100%' }} key={j}>
                     <div
                       className="des"
                       style={{
@@ -148,11 +148,11 @@ class Save extends Component {
           data-ride="carousel"
           data-interval="false"
         >
-          <ol class="carousel-indicators">
+          <ol className="carousel-indicators">
             <li
               data-target="#product-carousel"
               data-slide-to="0"
-              class="active"
+              className="active"
             />
             <li data-target="#product-carousel" data-slide-to="1" />
             <li data-target="#product-carousel" data-slide-to="2" />

@@ -34,16 +34,13 @@ class Steps extends Component {
             <div className="card-body" style={{ textAlign: 'left' }}>
               <div
                 style={{
-                  fontSize: '1.5em',
-                  marginBottom: '20px',
-
                   color: '#2952a3',
                   overflow: 'visible'
                 }}
               >
                 {this.state.tips.name}
               </div>
-              <div style={{ marginBottom: '30px' }}>
+              <div>
                 {/* <div className="col-sm-3">
                   <img src={this.state.tips.img} style={{ width: '100%' }} />
                 </div> */}

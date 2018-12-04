@@ -69,6 +69,7 @@ class App extends Component {
         <div
           className="intro main-intro"
           id="food-intro"
+          ref="food-intro"
           style={{ backgroundImage: `url(${foodImage})` }}
         >
           <div>

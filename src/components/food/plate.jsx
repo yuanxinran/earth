@@ -176,7 +176,7 @@ class Plate extends Component {
           cy="520"
           r="370"
           stroke="black"
-          stroke-width="0"
+          strokeWidth="0"
           fill="white"
         />
         <g>
