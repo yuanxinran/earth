@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 class Save extends Component {
   state = {
+    active: 0,
     tips: [
       {
         _id: 0,
         img: 'shopping',
         title: 'Smarter Shopping',
         points: [
-          { img: 'think', text: 'Think before you buyg' },
+          { img: 'think', text: 'Think before you buy' },
           {
             img: 'quality',
             text:
@@ -19,13 +20,89 @@ class Save extends Component {
           },
           { img: 'recycle', text: 'Recycle everything that you cand' }
         ]
+      },
+      {
+        _id: 1,
+        img: 'digital',
+        title: 'Go Digital',
+        points: [
+          {
+            img: 'newspaper',
+            text: 'Go digital with your newspaper subscription.'
+          },
+          {
+            img: 'printing',
+            text:
+              'Take advantage of your digital devices and cut back on printing!'
+          },
+          {
+            img: 'recycleG',
+            text:
+              'Use less paper or recycle it – there are lots of ways to do this. Think, “saving paper (or plastic, glass or aluminum for that matter) equals saving water.”'
+          },
+          { img: 'library', text: 'Go to libraries for books!' }
+        ]
+      },
+      {
+        _id: 2,
+        img: 'clothes',
+        title: 'Save on Clothes',
+        points: [
+          {
+            img: 'question',
+            text:
+              'Stop and ask yourself whether or not you really need that new piece of clothing.'
+          },
+          {
+            img: 'swap',
+            text:
+              'Have a clothing swap with friends/co-workers/social networks and donate the leftover goods to a charity.'
+          },
+          {
+            img: 'money',
+            text:
+              'Sell the clothes you’re ready to part with on eBay or at a consignment shop.'
+          },
+          {
+            img: 'cotton',
+            text:
+              'Choose organic cotton. Most cotton is grown in arid locations and with heavy pesticide use.'
+          }
+        ]
+      },
+      {
+        _id: 3,
+        img: 'bottle',
+        title: 'Go for Reusable!',
+        points: [
+          {
+            img: 'cup',
+            text:
+              'Get a reusable container, fill it with your own beverage or water from a fountain and reduce the need for more packaging-intensive, single serving sizes.'
+          },
+          {
+            img: 'tableware',
+            text:
+              'Carry a set of reusable tableware with you if you eat takeout a lot. '
+          },
+          {
+            img: 'bag',
+            text:
+              'Use cloth or reusable shopping bags. Plastic bag recycling is still extremely limited.'
+          },
+          {
+            img: 'recycleG',
+            text:
+              'Recycle (or reuse) every bit of plastic you can and only throw it in the trash as a last resort.'
+          }
+        ]
       }
     ]
   };
 
-  getCard(tip) {
+  getCard(tip, id) {
     return (
-      <div className="carousel-item active">
+      <div className={id == 0 ? 'carousel-item active' : 'carousel-item'}>
         <div className="card">
           <div className="card-body row">
             <div className="img col-sm-6">
@@ -35,18 +112,22 @@ class Save extends Component {
               />
             </div>
             <div className="text col-sm-6">
+              <div className="text-title">{tip.title}</div>
               {tip.points.map(function(p, j) {
                 return (
                   <div style={{ width: '100%' }}>
-                    <img
-                      src={require(`../../imgs/product/save/${p.img}.png`)}
-                    />
                     <div
-                      data-img={require(`../../imgs/product/save/${p.img}.png`)}
                       className="des"
-                      style={{ backgroundColor: 'red' }}
+                      style={{
+                        marginBottom: `${
+                          j == tip.points.length ? '1em' : '3em'
+                        }`
+                      }}
                     >
                       {p.text}
+                      <img
+                        src={require(`../../imgs/product/save/${p.img}.png`)}
+                      />
                     </div>
                   </div>
                 );
@@ -67,45 +148,39 @@ class Save extends Component {
           data-ride="carousel"
           data-interval="false"
         >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#product-carousel"
+              data-slide-to="0"
+              class="active"
+            />
+            <li data-target="#product-carousel" data-slide-to="1" />
+            <li data-target="#product-carousel" data-slide-to="2" />
+          </ol>
           <div className="carousel-inner">
             {this.state.tips.map(function(tip, i) {
               return (
-                <React.Fragment key={i}>{parent.getCard(tip)}</React.Fragment>
+                <React.Fragment key={i}>
+                  {parent.getCard(tip, i)}
+                </React.Fragment>
               );
             })}
-
-            <div className="carousel-item">
-              <div class="card">
-                <div class="card-body">
-                  This is some text within a card body.
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div class="card">
-                <div class="card-body">
-                  This is some text within a card body.
-                </div>
-              </div>
-            </div>
           </div>
           <a
-            className="carousel-control-prev"
-            href="#carouselExampleControls"
+            className="carousel-control-prev control"
+            href="#product-carousel"
             role="button"
             data-slide="prev"
           >
-            <span className="carousel-control-prev-icon" aria-hidden="true" />
-            <span className="sr-only">Previous</span>
+            <span style={{ color: 'grey', fontSize: '3em' }}>{'<'}</span>
           </a>
           <a
-            className="carousel-control-next"
-            href="#carouselExampleControls"
+            className="carousel-control-next control"
+            href="#product-carousel"
             role="button"
             data-slide="next"
           >
-            <span className="carousel-control-next-icon" aria-hidden="true" />
-            <span className="sr-only">Next</span>
+            <span style={{ color: 'grey', fontSize: '3em' }}>></span>
           </a>
         </div>
       </React.Fragment>

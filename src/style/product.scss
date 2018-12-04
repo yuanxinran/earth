@@ -1,28 +1,44 @@
 @import '../style/color.scss';
 
 .product {
+  .section {
+    margin-top: 40vh;
+    margin-bottom: 40vh;
+  }
   .save {
+    .control {
+      background-color: transparent !important;
+      &:hover {
+        background-color: $lighter-blue !important;
+      }
+    }
     #product-carousel {
       .card {
-        .img {
-          img {
-            width: 100%;
-          }
-        }
+        padding-top: 30px;
+        padding-bottom: 30px;
         .text {
-          position: relative;
+          .text-title {
+            font-size: 2.5em;
+            text-align: left;
+            margin-left: 10%;
+            margin-bottom: 40px;
+          }
+          margin-top: 1em;
           img {
             position: absolute;
+            top: 0;
             left: 0;
+            transform: translate(-140%, -20%);
             width: 10%;
           }
           .des {
             position: relative;
-            margin-left: 20%;
-            width: 80%;
+            width: 70%;
+            margin-left: 10%;
             text-align: left;
+            font-size: 1em;
             display: inline-block;
-            margin-bottom: 40px;
+            margin-bottom: 3em;
           }
         }
       }
@@ -80,6 +96,13 @@
     }
   }
   .use {
+    .title {
+      text-align: left;
+      font-size: 1.5vw;
+      width: 80%;
+      margin: auto auto;
+      margin-bottom: 3em;
+    }
     .rowa {
       display: flex;
       flex-direction: row;

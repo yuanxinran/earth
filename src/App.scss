@@ -12,28 +12,8 @@
   height: 40vmin;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .title-area {
@@ -53,11 +33,6 @@
   z-index: 3;
   font-family: Silom;
   font-size: 5em;
-}
-
-.section {
-  /* margin-top: 100px; */
-  margin-bottom: 100px;
 }
 
 #usage {
@@ -107,18 +82,14 @@
   margin: auto auto;
 }
 
-/* #water-intro {
-  width: 100%;
-  margin: 0 auto;
-  min-height: 300px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: repeat;
-  background-size: auto;
-  opacity: 50%;
-  z-index: -2;
-} */
-
 .my-gallery-class {
   width: 100%;
+}
+
+.text-general {
+  width: 65%;
+  margin: auto auto;
+  font-size: 1.5vw;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 1.5em;
 }

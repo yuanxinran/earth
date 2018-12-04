@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import drop from './imgs/drops.svg';
+import foodImage from './imgs/food.png';
+import indoorImage from './imgs/indoor.png';
+import productImage from './imgs/product.png';
+import food from './imgs/food.png';
 import './App.scss';
 import EarthContainer from './components/earth';
 import Text from './components/title';
@@ -7,7 +11,6 @@ import Food from './sections/food';
 import Indoor from './sections/indoor';
 import Product from './sections/product';
 import Plx from 'react-plx';
-import ScrollTrigger from 'scrolltrigger-classes';
 
 class App extends Component {
   render() {
@@ -23,7 +26,7 @@ class App extends Component {
         </div>
 
         <div
-          className="intro"
+          className="intro main-intro"
           style={{ backgroundImage: `url(${drop})` }}
           id="water-intro"
         >
@@ -65,8 +68,35 @@ class App extends Component {
             ex2="shower"
           />
         </div>
+        <div
+          className="intro main-intro"
+          id="food-intro"
+          style={{ backgroundImage: `url(${foodImage})` }}
+        >
+          <div>
+            <h1>Water We Eat</h1>
+          </div>
+        </div>
         <Food />
+        <div
+          className="intro main-intro"
+          id="indoor-intro"
+          style={{ backgroundImage: `url(${indoorImage})` }}
+        >
+          <div>
+            <h1>Indoor Water Use</h1>
+          </div>
+        </div>
         <Indoor />
+        <div
+          className="intro main-intro"
+          id="product-intro"
+          style={{ backgroundImage: `url(${productImage})` }}
+        >
+          <div>
+            <h1>Hidden Water In Products</h1>
+          </div>
+        </div>
         <Product />
       </div>
     );

@@ -1,4 +1,42 @@
 import React, { Component } from 'react';
+import Text from '../text.jsx';
+
+export class ProductUseI extends Component {
+  state = {
+    items: [
+      'A water bottle: 3 gallons',
+      'Electricity: 10 gallons/hour',
+      'A sheet of paper: 3 gallons',
+      'A car: 39,090 gallons',
+      'Bed Sheet: 2,839 gallons',
+      'Smart phone (mobile): 3,190 gallons',
+      'A pound of plastic: 22 gallons',
+      'Refine a gallon of gasline: 2 gallons'
+    ]
+  };
+  render() {
+    return (
+      <React.Fragment>
+        <Text
+          content="To meet all of these needs, industrial facilities in the US withdraw over 15.9 billion gallons of water per day."
+          font="1.3vw"
+          weight="bold"
+        />
+        {this.state.items.map(function(item, i) {
+          return <Text content={item} key={i} font="1.2vw" top="1em" />;
+        })}
+
+        <Text content="..." font="1.8vw" weight="bold" />
+        <Text content="..." font="1.8vw" weight="bold" />
+        <Text
+          content="The water that keeps America afloat on a sea of consumer goods is enormous. As some of the biggest shoppers on the planet, the average American’s water footprint for buying, using and throwing away consumer goods (excluding food) is 583 gallons of water per day."
+          font="1.3vw"
+          weight="bold"
+        />
+      </React.Fragment>
+    );
+  }
+}
 
 class ProductUse extends Component {
   constructor(props) {
@@ -18,6 +56,12 @@ class ProductUse extends Component {
     var parent = this;
     return (
       <React.Fragment>
+        <div className="title">
+          Practically everything you buy, <br />
+          use and consume has a water footprint because it took water to process
+          and transport it.
+        </div>
+
         <div className="rowa">
           <div className="img-container">
             <svg

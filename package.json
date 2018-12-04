@@ -7,6 +7,7 @@
     "jquery-parallax.js": "^1.5.0",
     "masonry-layout": "^4.2.2",
     "node-sass": "^4.10.0",
+    "pure-react-carousel": "^1.17.0",
     "radium": "^0.25.0",
     "react": "^16.6.3",
     "react-animated-number": "^0.4.4",
