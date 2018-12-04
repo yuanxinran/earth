@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/earth/static/media/nature.3ba681a8.jpg"
   },
   {
-    "revision": "e757ea7cbaffaeca7e44",
-    "url": "/earth/static/css/main.dbe50312.chunk.css"
+    "revision": "af7af77061eaa70c8079",
+    "url": "/earth/static/css/main.7c1fd19a.chunk.css"
   },
   {
     "revision": "c22b6e954c0465b26a47acc17f5831ce",
@@ -156,8 +156,8 @@ self.__precacheManifest = [
     "url": "/earth/static/media/leftover.57b5be33.jpg"
   },
   {
-    "revision": "e757ea7cbaffaeca7e44",
-    "url": "/earth/static/js/main.e757ea7c.chunk.js"
+    "revision": "af7af77061eaa70c8079",
+    "url": "/earth/static/js/main.af7af770.chunk.js"
   },
   {
     "revision": "db4a37eb34d76b1a293df97f26062265",
@@ -168,12 +168,12 @@ self.__precacheManifest = [
     "url": "/earth/static/media/vege.333176e2.jpg"
   },
   {
-    "revision": "b11d445b61066a1f60a1d79bfe5ab3de",
-    "url": "/earth/static/media/right.b11d445b.png"
-  },
-  {
     "revision": "ed3e6fd3a8cc84ccf765c35cf969ec7f",
     "url": "/earth/static/media/wrong.ed3e6fd3.png"
+  },
+  {
+    "revision": "b11d445b61066a1f60a1d79bfe5ab3de",
+    "url": "/earth/static/media/right.b11d445b.png"
   },
   {
     "revision": "48fc76a06bd0cd5dfb6967a3b26575ee",
@@ -308,7 +308,7 @@ self.__precacheManifest = [
     "url": "/earth/static/css/1.2ae166ab.chunk.css"
   },
   {
-    "revision": "03116d52d32b1c7da98652a13dcb38bf",
+    "revision": "56c17e4d2cec06a50294c253d4a99803",
     "url": "/earth/index.html"
   }
 ];
