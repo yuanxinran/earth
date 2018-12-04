@@ -28,7 +28,7 @@ const para = [
   {
     start: '0',
     end: 'self',
-    EndOffset: '150',
+    EndOffset: '130',
     properties: [
       {
         startValue: 0,
@@ -39,7 +39,7 @@ const para = [
   },
   {
     start: 'self',
-    startOffset: '150',
+    startOffset: '130',
     duration: '150',
     properties: [
       {
