@@ -1,7 +1,7 @@
 {
-  "main.css": "/earth/static/css/main.7c1fd19a.chunk.css",
-  "main.js": "/earth/static/js/main.24dbe644.chunk.js",
-  "main.js.map": "/earth/static/js/main.24dbe644.chunk.js.map",
+  "main.css": "/earth/static/css/main.7f0b4c83.chunk.css",
+  "main.js": "/earth/static/js/main.9f4b7f29.chunk.js",
+  "main.js.map": "/earth/static/js/main.9f4b7f29.chunk.js.map",
   "static/css/1.2ae166ab.chunk.css": "/earth/static/css/1.2ae166ab.chunk.css",
   "static/js/1.34218a3c.chunk.js": "/earth/static/js/1.34218a3c.chunk.js",
   "static/js/1.34218a3c.chunk.js.map": "/earth/static/js/1.34218a3c.chunk.js.map",
@@ -44,7 +44,7 @@
   "static/media/nature.jpg": "/earth/static/media/nature.3ba681a8.jpg",
   "static/media/plan.jpg": "/earth/static/media/plan.db4a37eb.jpg",
   "static/media/vege.jpg": "/earth/static/media/vege.333176e2.jpg",
-  "static/media/indoor.scss": "/earth/static/media/wrong.ed3e6fd3.png",
+  "static/media/indoor.scss": "/earth/static/media/right.b11d445b.png",
   "static/media/bath.svg": "/earth/static/media/bath.48fc76a0.svg",
   "static/media/dishwasher.svg": "/earth/static/media/dishwasher.dd39ab6a.svg",
   "static/media/leak.svg": "/earth/static/media/leak.cc81c1ce.svg",
@@ -77,9 +77,9 @@
   "static/media/agriculture.svg": "/earth/static/media/agriculture.15adc070.svg",
   "static/media/industry.svg": "/earth/static/media/industry.b686e2cb.svg",
   "static/media/domestic.svg": "/earth/static/media/domestic.c22b6e95.svg",
-  "static/css/main.7c1fd19a.chunk.css.map": "/earth/static/css/main.7c1fd19a.chunk.css.map",
   "static/css/1.2ae166ab.chunk.css.map": "/earth/static/css/1.2ae166ab.chunk.css.map",
+  "static/css/main.7f0b4c83.chunk.css.map": "/earth/static/css/main.7f0b4c83.chunk.css.map",
   "index.html": "/earth/index.html",
-  "precache-manifest.64a88e893f9358e879f899104df189f9.js": "/earth/precache-manifest.64a88e893f9358e879f899104df189f9.js",
+  "precache-manifest.e6495ac6def5cd1c3b8f45fa9a913841.js": "/earth/precache-manifest.e6495ac6def5cd1c3b8f45fa9a913841.js",
   "service-worker.js": "/earth/service-worker.js"
 }
